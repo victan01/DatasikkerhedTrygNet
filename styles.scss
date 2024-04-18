@@ -7,9 +7,11 @@
 }
 
 body{
-    background-color: #090A0B;
+    background-color: $navbar-color;
     font-family: "Roboto";
+    font
     src: url(../Datasikkerhed/Fonts/Roboto/Roboto-Regular.ttf);
+    font
 }
 
 
@@ -18,15 +20,33 @@ body{
 header{
     background-color:$navbar-color;
     display: flex;
-    justify-content: space-between;
+    justify-content: sac;
     position: sticky;
     top: 0;
     height: 95px;
     z-index: 100000;
+    align-items: center;
+    padding: 10px 20px;
 }
 
 .logo .img{
-    max-height: 40px;
-    width: 50px;
-    height: 30px;
+    width: 120px;
+    height: 90px;
+}
+
+.Rapporter-button{
+    background: transparent;
+    border: 2px solid white;
+    color: $button-color;
+    padding: 10px 35px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0,3s;
+    
+
+    :hover{
+        background-color: $button-text-hover;
+        color: $navbar-color;
+    }
+
 }
