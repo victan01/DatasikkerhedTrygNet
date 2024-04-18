@@ -1,1 +1,31 @@
-/*# sourceMappingURL=styles.css.map */
+/*Variabler*/
+/*Mixins til forside*/
+/*Mixins til .....*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #090A0B;
+  font-family: "Roboto";
+  src: url(../Datasikkerhed/Fonts/Roboto/Roboto-Regular.ttf);
+}
+
+/*Navbar*/
+header {
+  background-color: #090A0B;
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  height: 95px;
+  z-index: 100000;
+}
+
+.logo .img {
+  max-height: 40px;
+  width: 50px;
+  height: 30px;
+}/*# sourceMappingURL=styles.css.map */
