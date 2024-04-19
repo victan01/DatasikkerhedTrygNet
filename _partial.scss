@@ -3,10 +3,12 @@
 $navbar-color:#090A0B; 
 $background-color:#090A0B; 
 $button-color:#F5FFFE; 
-$button-hover:#0047FF;
+$button-hover:#00A3FF;
+$button-hover-white:#F5FFFE;
 $button-border-color:#F5FFFE;
 $font-color:#F5FFFE;
 $font-color2:#ff8a83;
+$cta-button: #00A3FF;
 $Heading-font-size: 54px;
 $broedtekst-font-size: 26px;
 $button-font-size: 26px;
@@ -15,6 +17,44 @@ $button-font-size: 26px;
 
 
 /*Mixins til forside*/
+@mixin border-btn {
+    background: transparent;
+    border: 2px solid $cta-button;
+    color: $button-color;
+    padding: 10px 46px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0,3s;
+    font-size: 1rem;     
+
+    blue-btn:hover{
+        border: 2px solid $button-hover-white;
+        color: $button-hover-white; 
+        font-size: 1.2rem;
+
+    }
+        
+}
+
+@mixin blue-btn {
+    background: $cta-button;
+    border: 2px solid $cta-button;
+    color: $button-color;
+    padding: 10px 46px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0,3s;
+    font-size: 1rem;     
+
+    blue-btn:hover{
+        background: 2px solid $button-hover-white;
+        color: $button-hover-white; 
+        font-size: 1.2rem;
+    }
+        
+}
+
+
 
 
 /*Mixins til .....*/

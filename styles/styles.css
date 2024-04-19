@@ -45,9 +45,9 @@ header {
 }
 
 .Rapporter-button:hover {
-  border: 2px solid #0047FF;
+  border: 2px solid #00A3FF;
   font-size: 1.2rem;
-  color: #0047FF;
+  color: #00A3FF;
 }
 
 .navbar-mobile {
@@ -55,7 +55,11 @@ header {
 }
 
 /*Header slutter*/
-h1 p {
+/* Forside starter*/
+main h1 {
+  color: #F5FFFE;
+}
+main p {
   color: #F5FFFE;
 }
 

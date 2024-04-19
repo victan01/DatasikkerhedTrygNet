@@ -62,12 +62,18 @@ header{
  /*Header slutter*/
 
 
+ /* Forside starter*/ 
+ 
  main{
+    h1{
+        color: $font-color;
+    }
+
+    p{
+       color: $font-color;
+    }
  }
 
- h1 p{
-    color: $font-color;
- }
 
 h2{
    color: $font-color2;
