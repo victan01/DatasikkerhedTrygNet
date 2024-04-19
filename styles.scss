@@ -50,9 +50,7 @@ header{
  } 
  
  .Rapporter-button:hover{
-    border: 2px solid $button-hover;
-    font-size: 1.2rem;
-    color: $button-hover;
+    font-size: 1.6rem;
  }
 
 .navbar-mobile{
@@ -105,9 +103,17 @@ h2{
     margin-left: 1%;
 }
 
-.bluebutton{
-    @include blue-btn;   
+.borderbutton:hover{
+    @include borderbutton-hover
 }
+
+.bluebutton{
+    @include blue-btn;  
+}
+
+.bluebutton:hover{
+    @include bluebutton-hover
+ }
 
 .forside-faktakasser{
     display: grid;
@@ -121,3 +127,4 @@ h2{
 .faktakasse{
     @include fakta-box;
 }
+

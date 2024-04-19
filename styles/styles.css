@@ -45,9 +45,7 @@ header {
 }
 
 .Rapporter-button:hover {
-  border: 2px solid #00A3FF;
-  font-size: 1.2rem;
-  color: #00A3FF;
+  font-size: 1.6rem;
 }
 
 .navbar-mobile {
@@ -98,10 +96,9 @@ h2 {
   font-size: 1.6rem;
   margin-left: 1%;
 }
-.borderbutton blue-btn:hover {
-  border: 2px solid #F5FFFE;
-  color: #F5FFFE;
-  font-size: 1.2rem;
+
+.borderbutton:hover {
+  font-size: 1.8rem;
 }
 
 .bluebutton {
@@ -114,10 +111,9 @@ h2 {
   transition: background-color 0.3s, color 0, 3s;
   font-size: 1.6rem;
 }
-.bluebutton blue-btn:hover {
-  background: 2px solid #F5FFFE;
-  color: #F5FFFE;
-  font-size: 1.2rem;
+
+.bluebutton:hover {
+  font-size: 1.8rem;
 }
 
 .forside-faktakasser {

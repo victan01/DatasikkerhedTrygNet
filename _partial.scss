@@ -3,7 +3,6 @@
 $navbar-color:#090A0B; 
 $background-color:#090A0B; 
 $button-color:#F5FFFE; 
-$button-hover:#00A3FF;
 $button-hover-white:#F5FFFE;
 $button-border-color:#F5FFFE;
 $font-color:#F5FFFE;
@@ -27,15 +26,12 @@ $button-font-size: 1.6rem;
     cursor: pointer;
     transition: background-color 0.3s, color 0,3s;
     font-size: 1.6rem;     
-
-    blue-btn:hover{
-        border: 2px solid $button-hover-white;
-        color: $button-hover-white; 
-        font-size: 1.2rem;
-
-    }
         
 }
+
+
+
+
 
 @mixin blue-btn {
     background: $cta-button;
@@ -46,13 +42,17 @@ $button-font-size: 1.6rem;
     cursor: pointer;
     transition: background-color 0.3s, color 0,3s;
     font-size: 1.6rem;    
-
-   blue-btn:hover{
-        background: 2px solid $button-hover-white;
-        color: $button-hover-white; 
-        font-size: 1.2rem;
-    }
         
+}
+
+@mixin bluebutton-hover{
+    font-size: 1.8rem;
+
+}
+
+@mixin borderbutton-hover{
+    font-size: 1.8rem;
+
 }
 
 @mixin fakta-box{
