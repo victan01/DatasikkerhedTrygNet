@@ -15,32 +15,32 @@ body {
 
 /*Navbar*/
 header {
-  background-color: #090A0B;
-  display: flex;
-  justify-content: sac;
   position: sticky;
-  top: 0;
-  height: 95px;
-  z-index: 100000;
-  align-items: center;
-  padding: 10px 20px;
+  height: 80px;
 }
 
-.logo .img {
-  width: 120px;
-  height: 90px;
+.navbar-desktop {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  background-color: transparent;
+  width: 100%;
 }
 
-.Rapporter-button {
+.img, a {
+  padding: 5%;
+}
+
+.Rapporter-container {
+  display: grid;
+  grid-column: 4;
+  gap: 10px;
+}
+.Rapporter-container .Rapporter-button {
   background: transparent;
   border: 2px solid white;
-  color: #090A0B;
-  padding: 10px 35px;
-  border-radius: 15px;
+  color: #F5FFFE;
+  padding: 5px 10px;
+  border-radius: 20px;
   cursor: pointer;
   transition: background-color 0.3s, color 0, 3s;
-}
-.Rapporter-button :hover {
-  background-color: #F5FFFE;
-  color: #090A0B;
 }/*# sourceMappingURL=styles.css.map */
