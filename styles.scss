@@ -53,6 +53,22 @@ header{
     border: 2px solid $button-hover;
     font-size: 1.2rem;
     color: $button-hover;
-
-
  }
+
+.navbar-mobile{
+    display: none;  
+ }
+
+ /*Header slutter*/
+
+
+ main{
+ }
+
+ h1 p{
+    color: $font-color;
+ }
+
+h2{
+   color: $font-color2;
+}

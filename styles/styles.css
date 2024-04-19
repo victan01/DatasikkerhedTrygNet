@@ -48,4 +48,17 @@ header {
   border: 2px solid #0047FF;
   font-size: 1.2rem;
   color: #0047FF;
+}
+
+.navbar-mobile {
+  display: none;
+}
+
+/*Header slutter*/
+h1 p {
+  color: #F5FFFE;
+}
+
+h2 {
+  color: #ff8a83;
 }/*# sourceMappingURL=styles.css.map */
