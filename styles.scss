@@ -92,6 +92,7 @@ h2{
 
 .forside-tekst{
     padding: 12%;
+    margin-top: 5%;
 
 }
 
@@ -110,9 +111,8 @@ h2{
 
 .forside-faktakasser{
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(2fr auto);
-    grid-gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2 1fr);
     justify-content: center;
     align-items: center;
 }

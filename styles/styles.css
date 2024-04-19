@@ -80,6 +80,7 @@ h2 {
 
 .forside-tekst {
   padding: 12%;
+  margin-top: 5%;
 }
 
 .forside-tekst h1, .forside-tekst h2 {
@@ -121,20 +122,20 @@ h2 {
 
 .forside-faktakasser {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: repeat(2fr auto);
-  grid-gap: 10px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2 1fr);
   justify-content: center;
   align-items: center;
 }
 
 .faktakasse {
-  width: 150px;
-  height: 150px;
+  width: 180px;
+  height: 180px;
   border: 5px solid #ff8a83;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
   font-size: 1.6rem;
+  margin: 20%;
 }/*# sourceMappingURL=styles.css.map */

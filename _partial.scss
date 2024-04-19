@@ -56,14 +56,15 @@ $button-font-size: 1.6rem;
 }
 
 @mixin fakta-box{
-    width: 150px;
-    height: 150px;
+    width: 180px;
+    height: 180px;
     border: 5px solid $borderbox-color;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
     font-size: $broedtekst-font-size;
+    margin: 20%;
 }
 
 
