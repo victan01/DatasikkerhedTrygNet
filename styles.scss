@@ -9,7 +9,6 @@
 body{
     background-color: $navbar-color;
     font-family: "Roboto";
-    font
     src: url(../Datasikkerhed/Fonts/Roboto/Roboto-Regular.ttf);
     font
 }
@@ -18,7 +17,8 @@ body{
 /*Navbar*/
 
 header{
-    background-color:$navbar-color;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     display: flex;
     justify-content: sac;
     position: sticky;
@@ -35,6 +35,7 @@ header{
 }
 
 .Rapporter-button{
+
     background: transparent;
     border: 2px solid white;
     color: $button-color;
@@ -43,10 +44,5 @@ header{
     cursor: pointer;
     transition: background-color 0.3s, color 0,3s;
     
-
-    :hover{
-        background-color: $button-text-hover;
-        color: $navbar-color;
-    }
 
 }
