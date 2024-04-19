@@ -17,30 +17,35 @@ body {
 header {
   position: sticky;
   height: 80px;
+  padding: 1%;
 }
 
 .navbar-desktop {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  padding: 10px;
   background-color: transparent;
   width: 100%;
 }
 
-.img, a {
-  padding: 5%;
+.logo {
+  max-width: 200px;
 }
 
-.Rapporter-container {
-  display: grid;
-  grid-column: 4;
-  gap: 10px;
-}
-.Rapporter-container .Rapporter-button {
+.Rapporter-button {
   background: transparent;
-  border: 2px solid white;
+  border: 2px solid #F5FFFE;
   color: #F5FFFE;
-  padding: 5px 10px;
+  padding: 10px 46px;
   border-radius: 20px;
   cursor: pointer;
   transition: background-color 0.3s, color 0, 3s;
+  font-size: 1rem;
+}
+
+.Rapporter-button:hover {
+  border: 2px solid #0047FF;
+  font-size: 1.2rem;
+  color: #0047FF;
 }/*# sourceMappingURL=styles.css.map */
