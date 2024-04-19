@@ -45,7 +45,7 @@ header{
     border-radius: 20px;
     cursor: pointer;
     transition: background-color 0.3s, color 0,3s;
-    font-size: 1rem; 
+    font-size: 1.125rem; 
     
  } 
  
@@ -73,6 +73,7 @@ header{
     p{
        font-size: $broedtekst-font-size;
        color: $font-color;
+       margin-bottom: 5%;
     }
  }
 
@@ -93,11 +94,14 @@ h2{
     padding: 15%;
 }
 
-.bluebutton{
-    @include partial.blue-btn;
+.borderbutton{
+    @include border-btn;
+
 }
 
-.borderbutton{
-    @include partial.border-btn;
+.bluebutton{
+    @include blue-btn;
+    margin-left: 1%;
+ 
     
 }

@@ -41,7 +41,7 @@ header {
   border-radius: 20px;
   cursor: pointer;
   transition: background-color 0.3s, color 0, 3s;
-  font-size: 1rem;
+  font-size: 1.125rem;
 }
 
 .Rapporter-button:hover {
@@ -61,8 +61,9 @@ main h1 {
   color: #F5FFFE;
 }
 main p {
-  font-size: 26px;
+  font-size: 1.6;
   color: #F5FFFE;
+  margin-bottom: 5%;
 }
 
 h2 {
@@ -76,10 +77,40 @@ h2 {
   grid-gap: 5%;
   padding: 1%;
 }
-.forside-section h1 {
-  height: 80px;
-}
 
 .forside-tekst {
   padding: 15%;
+}
+
+.borderbutton {
+  background: transparent;
+  border: 2px solid #00A3FF;
+  color: #F5FFFE;
+  padding: 10px 50px;
+  border-radius: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0, 3s;
+  font-size: 1.6rem;
+}
+.borderbutton blue-btn:hover {
+  border: 2px solid #F5FFFE;
+  color: #F5FFFE;
+  font-size: 1.2rem;
+}
+
+.bluebutton {
+  background: #00A3FF;
+  border: 2px solid #00A3FF;
+  color: #F5FFFE;
+  padding: 10px 30px;
+  border-radius: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0, 3s;
+  font-size: 1.6rem;
+  margin-left: 1%;
+}
+.bluebutton blue-btn:hover {
+  background: 2px solid #F5FFFE;
+  color: #F5FFFE;
+  font-size: 1.2rem;
 }/*# sourceMappingURL=styles.css.map */
