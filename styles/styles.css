@@ -57,12 +57,29 @@ header {
 /*Header slutter*/
 /* Forside starter*/
 main h1 {
+  font-size: 54px;
   color: #F5FFFE;
 }
 main p {
+  font-size: 26px;
   color: #F5FFFE;
 }
 
 h2 {
+  font-size: 54px;
   color: #ff8a83;
+}
+
+.forside-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 5%;
+  padding: 1%;
+}
+.forside-section h1 {
+  height: 80px;
+}
+
+.forside-tekst {
+  padding: 15%;
 }/*# sourceMappingURL=styles.css.map */

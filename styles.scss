@@ -63,18 +63,41 @@ header{
 
 
  /* Forside starter*/ 
- 
+
  main{
     h1{
+        font-size: $Heading-font-size;
         color: $font-color;
     }
 
     p{
+       font-size: $broedtekst-font-size;
        color: $font-color;
     }
  }
 
 
 h2{
+   font-size: $Heading-font-size;
    color: $font-color2;
+}
+
+.forside-section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5%;
+    padding: 1%;
+}
+
+.forside-tekst{
+    padding: 15%;
+}
+
+.bluebutton{
+    @include partial.blue-btn;
+}
+
+.borderbutton{
+    @include partial.border-btn;
+    
 }
