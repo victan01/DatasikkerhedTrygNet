@@ -107,3 +107,17 @@ h2{
 .bluebutton{
     @include blue-btn;   
 }
+
+.forside-faktakasser{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(2fr auto);
+    grid-gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.faktakasse{
+    @include fakta-box;
+}
