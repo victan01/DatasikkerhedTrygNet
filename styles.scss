@@ -91,17 +91,19 @@ h2{
 }
 
 .forside-tekst{
-    padding: 15%;
+    padding: 12%;
+
+}
+
+.forside-tekst h1, .forside-tekst h2{
+    display: inline;
 }
 
 .borderbutton{
     @include border-btn;
-
+    margin-left: 1%;
 }
 
 .bluebutton{
-    @include blue-btn;
-    margin-left: 1%;
- 
-    
+    @include blue-btn;   
 }

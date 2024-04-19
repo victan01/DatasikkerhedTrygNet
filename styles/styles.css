@@ -57,17 +57,17 @@ header {
 /*Header slutter*/
 /* Forside starter*/
 main h1 {
-  font-size: 54px;
+  font-size: 62px;
   color: #F5FFFE;
 }
 main p {
-  font-size: 1.6;
+  font-size: 1.6rem;
   color: #F5FFFE;
   margin-bottom: 5%;
 }
 
 h2 {
-  font-size: 54px;
+  font-size: 62px;
   color: #ff8a83;
 }
 
@@ -79,7 +79,11 @@ h2 {
 }
 
 .forside-tekst {
-  padding: 15%;
+  padding: 12%;
+}
+
+.forside-tekst h1, .forside-tekst h2 {
+  display: inline;
 }
 
 .borderbutton {
@@ -91,6 +95,7 @@ h2 {
   cursor: pointer;
   transition: background-color 0.3s, color 0, 3s;
   font-size: 1.6rem;
+  margin-left: 1%;
 }
 .borderbutton blue-btn:hover {
   border: 2px solid #F5FFFE;
@@ -107,7 +112,6 @@ h2 {
   cursor: pointer;
   transition: background-color 0.3s, color 0, 3s;
   font-size: 1.6rem;
-  margin-left: 1%;
 }
 .bluebutton blue-btn:hover {
   background: 2px solid #F5FFFE;
