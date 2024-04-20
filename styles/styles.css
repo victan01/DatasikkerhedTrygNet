@@ -127,6 +127,7 @@ h2 {
   grid-template-columns: 1fr 1fr;
   grid-gap: 5%;
   padding: 1%;
+  margin-bottom: 10%;
 }
 
 .forside-tekst {
@@ -149,6 +150,11 @@ h2 {
   font-size: 1.6rem;
   margin-left: 1%;
 }
+@media only screen and (max-width: 768px) {
+  .borderbutton {
+    margin: 2%;
+  }
+}
 
 .borderbutton:hover {
   font-size: 1.8rem;
@@ -163,6 +169,12 @@ h2 {
   cursor: pointer;
   transition: background-color 0.3s, color 0, 3s;
   font-size: 1.6rem;
+}
+@media only screen and (max-width: 768px) {
+  .bluebutton {
+    margin: 2%;
+    padding: 10px 50px;
+  }
 }
 
 .bluebutton:hover {
@@ -227,6 +239,9 @@ h2 {
   .logo {
     max-width: 110px;
   }
+  #sidebar {
+    display: none;
+  }
   main h1 {
     font-size: 2.625rem;
   }
@@ -236,6 +251,12 @@ h2 {
   .forside-section {
     grid-template-columns: 1fr;
   }
+  .forside-faktakasser {
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+  }
+}
+@media only screen and (max-width: 500px) {
   .forside-faktakasser {
     grid-template-columns: 1fr;
   }

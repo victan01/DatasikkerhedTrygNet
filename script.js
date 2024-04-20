@@ -5,11 +5,11 @@ const sidebar = document.getElementById("sidebar")
 const content = document.querySelector("menucontent")
 
 menubtn.addEventListener("click",()=>{
-    if(sidebar.style.left === "-250px" || sidebar.style.left === '') {
-       sidebar.style.left="0";
+    if(sidebar.style.display === "none" || sidebar.style.display === '') {
+       sidebar.style.display="block";
        content.style.marginleft = "200px";
     } else{
-        sidebar.style.left ="-250px";
+        sidebar.style.display ="none";
         content.style.marginleft= "0";
 
     }

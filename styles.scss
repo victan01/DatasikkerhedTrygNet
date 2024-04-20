@@ -121,6 +121,7 @@ h2{
     grid-template-columns: 1fr 1fr;
     grid-gap: 5%;
     padding: 1%;
+    margin-bottom: 10%;
 }
 
 .forside-tekst{
@@ -209,6 +210,9 @@ h2{
         max-width: 110px;
     }
       
+   #sidebar{
+    display: none;
+   }
 
 
     main{
@@ -227,7 +231,15 @@ h2{
     }
 
     .forside-faktakasser{
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
     }
 
+}
+
+@media only screen and (max-width: 500px){
+   
+    .forside-faktakasser{
+        grid-template-columns: 1fr;
+    }
 }
