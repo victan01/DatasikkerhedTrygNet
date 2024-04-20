@@ -126,5 +126,27 @@ h2{
 
 .faktakasse{
     @include fakta-box;
+
 }
 
+
+.faktaikon img{
+    @include ikon-size-front-page
+}
+    
+.fakta{
+    font-size: 62px;
+    color: $font-color2;
+    position: relative;
+    &:after{
+        position: absolute;
+        justify-content: center;
+        transform: translate(-50%,-45%);
+    }
+}
+
+.fakta-tekst{
+    p{
+       font-size: $faktakasse-font-size;
+    }
+}

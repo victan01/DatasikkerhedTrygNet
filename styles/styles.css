@@ -128,10 +128,33 @@ h2 {
   width: 180px;
   height: 180px;
   border: 5px solid #ff8a83;
-  display: flex;
-  justify-content: center;
+  border-radius: 16px;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  justify-items: center;
   align-items: center;
   flex-direction: row;
   font-size: 1.6rem;
-  margin: 20%;
+  margin: 20px;
+}
+
+.faktaikon img {
+  width: 48px;
+  height: 46px;
+  margin-top: 12px;
+}
+
+.fakta {
+  font-size: 62px;
+  color: #ff8a83;
+  position: relative;
+}
+.fakta:after {
+  position: absolute;
+  justify-content: center;
+  transform: translate(-50%, -45%);
+}
+
+.fakta-tekst p {
+  font-size: 1.1rem;
 }/*# sourceMappingURL=styles.css.map */
