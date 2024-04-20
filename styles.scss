@@ -38,14 +38,7 @@ header{
   
 
   .Rapporter-button{
-    background: transparent;
-    border: 2px solid $button-border-color;
-    color: $button-color;
-    padding: 10px 46px;
-    border-radius: 20px;
-    cursor: pointer;
-    transition: background-color 0.3s, color 0,3s;
-    font-size: 1.125rem; 
+    @include white-rapporterbtn
     
  } 
  
@@ -149,4 +142,46 @@ h2{
     p{
        font-size: $faktakasse-font-size;
     }
+}
+
+
+
+
+/*Responsivt design*/ 
+
+@media only screen and (max-width: 768px) {
+    header{
+        height: 60px;
+    }
+
+    .navbar-desktop{
+        display: none;
+    }
+
+    .navbar-mobile{
+        display: grid;
+        grid-template-columns: 1fr auto;
+    }
+
+  
+
+    main{
+        h1{
+            font-size: $Heading-mobile-size;
+        }
+
+        h2{
+            font-size: $Heading-mobile-size;
+        }
+    }
+
+    .forside-section{
+        grid-template-columns: 1fr ;
+
+    }
+
+    .forside-faktakasser{
+        grid-template-columns: 1fr;
+    }
+
 }

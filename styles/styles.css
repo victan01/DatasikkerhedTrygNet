@@ -43,6 +43,13 @@ header {
   transition: background-color 0.3s, color 0, 3s;
   font-size: 1.125rem;
 }
+@media only screen and (max-width: 768px) {
+  .Rapporter-button {
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-size: 0, 75rem;
+  }
+}
 
 .Rapporter-button:hover {
   font-size: 1.6rem;
@@ -55,7 +62,7 @@ header {
 /*Header slutter*/
 /* Forside starter*/
 main h1 {
-  font-size: 62px;
+  font-size: 3.875rem;
   color: #F5FFFE;
 }
 main p {
@@ -65,7 +72,7 @@ main p {
 }
 
 h2 {
-  font-size: 62px;
+  font-size: 3.875rem;
   color: #ff8a83;
 }
 
@@ -157,4 +164,30 @@ h2 {
 
 .fakta-tekst p {
   font-size: 1.1rem;
+}
+
+/*Responsivt design*/
+@media only screen and (max-width: 768px) {
+  header {
+    height: 60px;
+  }
+  .navbar-desktop {
+    display: none;
+  }
+  .navbar-mobile {
+    display: grid;
+    grid-template-columns: 1fr auto;
+  }
+  main h1 {
+    font-size: 2.625rem;
+  }
+  main h2 {
+    font-size: 2.625rem;
+  }
+  .forside-section {
+    grid-template-columns: 1fr;
+  }
+  .forside-faktakasser {
+    grid-template-columns: 1fr;
+  }
 }/*# sourceMappingURL=styles.css.map */
