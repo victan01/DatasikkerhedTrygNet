@@ -1,5 +1,5 @@
 /*Variabler*/
-/*Mixins til forside*/
+/*Mixins til forside og navbar*/
 /*Mixins til .....*/
 * {
   box-sizing: border-box;
@@ -43,24 +43,70 @@ header {
   transition: background-color 0.3s, color 0, 3s;
   font-size: 1.125rem;
 }
-@media only screen and (max-width: 768px) {
-  .Rapporter-button {
-    padding: 5px 10px;
-    border-radius: 10px;
-    font-size: 0, 75rem;
-  }
-}
 
 .Rapporter-button:hover {
   font-size: 1.6rem;
 }
 
+/* Navbar til mobile*/
 .navbar-mobile {
   display: none;
 }
 
+.menu-bar {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  cursor: pointer;
+  z-index: 999;
+}
+
+.sidebar {
+  position: fixed;
+  width: 250px;
+  height: 100%;
+  background: grey;
+  transition: left 0.3s ease;
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu li {
+  padding: 10px 0;
+  border-bottom: solid white;
+}
+
+.menu a {
+  color: #F5FFFE;
+  padding-left: 50px;
+  font-size: 1.6rem;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.menu a:hover {
+  color: black;
+}
+
+.menu-btn {
+  background: transparent;
+  width: 45px;
+  height: 45px;
+  margin-right: 5px;
+  margin-top: 2px;
+  cursor: pointer;
+}
+
 /*Header slutter*/
 /* Forside starter*/
+main {
+  margin-right: 0;
+  margin-right: 0, 3 ease;
+}
 main h1 {
   font-size: 3.875rem;
   color: #F5FFFE;
@@ -177,6 +223,9 @@ h2 {
   .navbar-mobile {
     display: grid;
     grid-template-columns: 1fr auto;
+  }
+  .logo {
+    max-width: 110px;
   }
   main h1 {
     font-size: 2.625rem;

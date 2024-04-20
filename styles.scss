@@ -46,9 +46,48 @@ header{
     font-size: 1.6rem;
  }
 
+ /* Navbar til mobile*/ 
 .navbar-mobile{
     display: none;  
  }
+
+ .menu-bar{
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    cursor: pointer;
+    z-index: 999;
+ }
+
+ .sidebar{
+    @include sidebar-to-menu
+ }
+
+ .menu{
+    @include menu
+ }
+
+ .menu li{
+    @include menu-item
+ }
+
+ .menu a{
+    @include link
+ }
+
+ .menu a:hover{
+    color: black;
+ }
+
+ .menu-btn{
+    background: transparent;
+    width: 45px;
+    height: 45px;
+    margin-right: 5px;
+    margin-top: 2px;
+    cursor: pointer;
+ }
+
 
  /*Header slutter*/
 
@@ -56,6 +95,9 @@ header{
  /* Forside starter*/ 
 
  main{
+
+    margin-right: 0;
+    margin-right: 0,3 ease;
     h1{
         font-size: $Heading-font-size;
         color: $font-color;
@@ -163,7 +205,11 @@ h2{
         grid-template-columns: 1fr auto;
     }
 
-  
+    .logo{
+        max-width: 110px;
+    }
+      
+
 
     main{
         h1{
