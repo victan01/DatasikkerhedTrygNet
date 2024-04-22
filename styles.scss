@@ -13,6 +13,15 @@ body{
     
 }
 
+h1{
+   font-size: $Heading-font-size;
+}
+
+p{
+    font-size: $broedtekst-font-size;
+}
+
+
 
 /*Navbar*/
 
@@ -195,7 +204,7 @@ h2{
     z-index: 1000;
     padding: 20px;
     text-align: center;
-    margin-left: 50%;
+    margin-left: 55%;
     font-size: $broedtekst-font-size;
     position: sticky;
 
@@ -209,6 +218,7 @@ h2{
         color: $font-color2;
         font-size: $hover-font-size;
        }
+ 
 
 }
 
@@ -261,6 +271,9 @@ h2{
         justify-items: center;
     }
 
+    .navsection{
+        
+    }
 }
 
 @media only screen and (max-width: 500px){
@@ -269,3 +282,4 @@ h2{
         grid-template-columns: 1fr;
     }
 }
+

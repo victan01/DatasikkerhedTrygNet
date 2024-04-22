@@ -13,6 +13,14 @@ body {
   src: url(../Datasikkerhed/Fonts/Roboto/Roboto-Regular.ttf);
 }
 
+h1 {
+  font-size: 3.875rem;
+}
+
+p {
+  font-size: 1.6rem;
+}
+
 /*Navbar*/
 header {
   position: sticky;
@@ -230,18 +238,18 @@ h2 {
   z-index: 1000;
   padding: 20px;
   text-align: center;
-  margin-left: 60%;
+  margin-left: 55%;
   font-size: 1.6rem;
   position: sticky;
 }
 .navsection a {
   color: #F5FFFE;
   text-decoration: none;
-  padding: 10px;
+  padding: 5px;
 }
 .navsection a:hover {
   color: #ff8a83;
-  font-size: 3.875rem;
+  font-size: 1, 4rem;
 }
 
 /*Responsivt design*/
