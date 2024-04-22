@@ -224,7 +224,6 @@ h2{
 #datasikkerhed-section{
     display: grid;
     grid-template-columns: auto 1fr;
-    margin-top: 5%;
 }
 
 
@@ -236,9 +235,19 @@ h2{
 
 
 
+
 /*Responsivt design*/ 
 
 @media only screen and (max-width: 768px) {
+
+    h1{
+        font-size: $Heading-mobile-size;
+    }
+
+    p{
+        font-size: $faktakasse-font-size;
+    }
+
     header{
         height: 60px;
     }
@@ -289,6 +298,11 @@ h2{
         display: grid;
         grid-template-columns: 1fr;
         margin-top: 5%;
+    }
+
+
+    .datasikkerhedsbillede{
+        margin-right: 10%;
     }
 }
 
