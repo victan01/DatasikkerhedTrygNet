@@ -233,13 +233,7 @@ h2{
     padding: 8.5%;
 }
 
-.datasikkerhed-billede{
-    grid-column: 2;
 
-    img{
-
-    }
-}
 
 
 /*Responsivt design*/ 
@@ -288,9 +282,16 @@ h2{
     }
 
     .navsection{
-        
+        display: none;
+    }
+
+    #datasikkerhed-section{
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-top: 5%;
     }
 }
+
 
 @media only screen and (max-width: 500px){
    
