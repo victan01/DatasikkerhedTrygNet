@@ -252,6 +252,20 @@ h2 {
   font-size: 1, 4rem;
 }
 
+#datasikkerhed-section {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  margin-top: 5%;
+}
+
+.datasikkerhed-tekst {
+  grid-column: 1;
+  padding: 8.5%;
+}
+
+.datasikkerhed-billede {
+  grid-column: 2;
+}
 /*Responsivt design*/
 @media only screen and (max-width: 768px) {
   header {

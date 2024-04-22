@@ -107,6 +107,7 @@ header{
 
     margin-right: 0;
     margin-right: 0,3 ease;
+
     h1{
         font-size: $Heading-font-size;
         color: $font-color;
@@ -218,12 +219,27 @@ h2{
         color: $font-color2;
         font-size: $hover-font-size;
        }
- 
-
 }
 
-    
+#datasikkerhed-section{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    margin-top: 5%;
+}
 
+
+.datasikkerhed-tekst{
+    grid-column: 1;
+    padding: 8.5%;
+}
+
+.datasikkerhed-billede{
+    grid-column: 2;
+
+    img{
+
+    }
+}
 
 
 /*Responsivt design*/ 
