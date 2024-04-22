@@ -258,14 +258,7 @@ h2 {
 }
 
 .datasikkerhed-tekst {
-  grid-column: 1;
   padding: 12%;
-}
-
-.datasikkerheds-section img {
-  display: grid;
-  grid-template-columns: auto 1fr;
-  margin-top: 5%;
 }
 
 /*Responsivt design*/
@@ -307,21 +300,6 @@ h2 {
   }
   .navsection {
     display: none;
-  }
-  #datasikkerhed-section {
-    display: grid;
-    grid-template-columns: 1fr;
-    margin-top: 5%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .datasikkerhed-tekst {
-    padding: 0;
-  }
-  #datasikkerhed-section img {
-    width: 440px;
-    height: 200px;
   }
 }
 @media only screen and (max-width: 500px) {
