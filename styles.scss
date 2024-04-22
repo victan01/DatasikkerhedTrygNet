@@ -187,6 +187,32 @@ h2{
     }
 }
 
+/* Forside slukker*/
+
+/* section 2 - + nav- starter*/
+
+.navsection{
+    z-index: 1000;
+    padding: 20px;
+    text-align: center;
+    margin-left: 50%;
+    font-size: $broedtekst-font-size;
+    position: sticky;
+
+    a{
+        color: $font-color;
+        text-decoration: none;       
+        padding: 5px;
+    }
+
+    a:hover{
+        color: $font-color2;
+        font-size: $hover-font-size;
+       }
+
+}
+
+    
 
 
 

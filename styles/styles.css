@@ -224,6 +224,26 @@ h2 {
   font-size: 1.1rem;
 }
 
+/* Forside slukker*/
+/* section 2 - + nav- starter*/
+.navsection {
+  z-index: 1000;
+  padding: 20px;
+  text-align: center;
+  margin-left: 60%;
+  font-size: 1.6rem;
+  position: sticky;
+}
+.navsection a {
+  color: #F5FFFE;
+  text-decoration: none;
+  padding: 10px;
+}
+.navsection a:hover {
+  color: #ff8a83;
+  font-size: 3.875rem;
+}
+
 /*Responsivt design*/
 @media only screen and (max-width: 768px) {
   header {
