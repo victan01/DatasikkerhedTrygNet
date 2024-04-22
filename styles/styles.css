@@ -308,7 +308,7 @@ h2 {
     margin-top: 5%;
   }
   .datasikkerhedsbillede {
-    margin-right: 10%;
+    padding-right: 2%;
   }
 }
 @media only screen and (max-width: 500px) {
