@@ -223,13 +223,13 @@ h2{
 
 #datasikkerhed-section{
     display: grid;
-    grid-template-columns: auto 1fr;
+    grid-template-columns: 1fr;
 }
 
 
 .datasikkerhed-tekst{
     grid-column: 1;
-    padding: 8.5%;
+    padding: 12%;
 }
 
 
@@ -302,7 +302,20 @@ h2{
         display: grid;
         grid-template-columns: 1fr;
         margin-top: 5%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
+
+    .datasikkerhed-tekst{
+        padding: 0;
+    }
+    #datasikkerhed-section img{
+        width: 440px;
+        height: 200px;
+    }
+  
 }
 
 
@@ -310,6 +323,11 @@ h2{
    
     .forside-faktakasser{
         grid-template-columns: 1fr;
+    }
+
+    #datasikkerhed-section img{
+        width: 340px;
+        height: 200px;
     }
 }
 
