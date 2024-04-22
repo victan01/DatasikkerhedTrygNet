@@ -233,6 +233,10 @@ h2{
 }
 
 
+.datasikkerheds-section img{
+    @include DatasikkerhedsIMG
+
+}
 
 
 
@@ -298,11 +302,6 @@ h2{
         display: grid;
         grid-template-columns: 1fr;
         margin-top: 5%;
-    }
-
-
-    .datasikkerhedsbillede{
-        padding-right: 2%;
     }
 }
 

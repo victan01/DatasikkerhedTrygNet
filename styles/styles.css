@@ -262,6 +262,18 @@ h2 {
   padding: 8.5%;
 }
 
+.datasikkerheds-section img {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  margin-top: 5%;
+}
+@media only screen and (max-width: 768px) {
+  .datasikkerheds-section img {
+    width: 200x;
+    height: 200px;
+  }
+}
+
 /*Responsivt design*/
 @media only screen and (max-width: 768px) {
   h1 {
@@ -306,9 +318,6 @@ h2 {
     display: grid;
     grid-template-columns: 1fr;
     margin-top: 5%;
-  }
-  .datasikkerhedsbillede {
-    padding-right: 2%;
   }
 }
 @media only screen and (max-width: 500px) {
