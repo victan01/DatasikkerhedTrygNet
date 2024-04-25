@@ -53,9 +53,6 @@ const Rigtigtsvar = document.getElementById('rigtigtsvar')
 const Vinderlyd = document.getElementById('vinderlyd')
 const Taberlyd = document.getElementById('taberlyd')
 
-/* Score variabler*/
-Let.currentQuestionIndex = 0; 
-Let.score = 0;
 
 /* Dernæst påbegynder jeg mine spørgsmål med svarmuligheder*/
  const Spørgsmål = [
