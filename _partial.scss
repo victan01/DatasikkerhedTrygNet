@@ -65,7 +65,7 @@ $button-font-size: 1.6rem;
     background: transparent;
     border: 2px solid $cta-button;
     color: $button-color;
-    padding: 10px 50px;
+    padding: 10px 30px;
     border-radius: 16px;
     cursor: pointer;
     transition: background-color 0.3s, color 0,3s;
@@ -87,6 +87,8 @@ $button-font-size: 1.6rem;
     cursor: pointer;
     transition: background-color 0.3s, color 0,3s;
     font-size: 1.6rem;  
+    margin-bottom: 3%;
+
     
     @media only screen and (max-width: 768px){
         margin: 2%;
