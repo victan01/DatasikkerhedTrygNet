@@ -146,10 +146,16 @@ $button-font-size: 1.6rem;
        display: none;
 
     }
-
-
 }
  
+
+@mixin game-baggrund{
+    background-image: url(/Img/Img4Game/Desktopgame.png);
+    max-width: 800px;
+    margin: 0 auto;
+    
+
+}
 
 
 
