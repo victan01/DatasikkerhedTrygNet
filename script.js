@@ -37,3 +37,19 @@ valueDisplays.forEach((valueDisplays)=>{
 
 
 /*Sikkerhedspillet*/
+/* Jeg kalder først på mine ID*/
+
+const StartKnap = document.getElementById('start-knap')
+const SpørgsmålsBox = document.getElementById('spørgsmålsbox')
+const SpørgsmålsTekst = document.getElementById('spørgsmålstekst')
+const ValgmulighedsBox = document.getElementById('valgmuligheds-box')
+const Valgmulighedsknapper = document.getElementById('spørgsmålstekst')
+const SvarBox = document.getElementById('svar-box')
+const SvarTekst = document.getElementById('svartekst')
+const FortsætKnap = document.getElementById('fortsæt-knap')
+const Slut = document.getElementById('slut')
+const PointTælling = document.getElementById('point-tælling')
+const Forkertsvar = document.getElementById('forkertsvar')
+const Rigtigtsvar = document.getElementById('rigtigtsvar')
+const Vinderlyd = document.getElementById('vinderlyd')
+const Taberlyd = document.getElementById('taberlyd')
