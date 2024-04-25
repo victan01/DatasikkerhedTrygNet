@@ -150,6 +150,7 @@ $button-font-size: 1.6rem;
     }
 }
  
+/* mixins til sikkerhedspillet*/
 
 @mixin game-baggrund{
     background-image: url(/Img/Img4Game/Desktopgame.png);
@@ -190,4 +191,61 @@ $button-font-size: 1.6rem;
     box-shadow: 0 0 10px $cta-buttonglow-hover,0 0 20px $cta-buttonglow-hover,0 0 30px $cta-buttonglow-hover; 
 }
 
+
+@mixin valgmulighedbutton{
+    background: transparent;
+    border: 2px solid $cta-button;
+    color: $button-color;
+    padding: 10px 30px;
+    border-radius: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0,3s;
+    font-size: 1.6rem;     
+    box-shadow: 0 0 10px $cta-buttonglow,0 0 20px $cta-buttonglow,0 0 30px $cta-buttonglow;   
+
+    @media only screen and (max-width: 500px){
+        font-size: 1.2rem;
+        padding: 10%;
+        margin: 3%;
+    }
+
+}
+
+@mixin fortsæt-knap{
+    background: black;
+    color: $button-color;
+    padding: 10px 30px;
+    border-radius: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0,3s;
+    font-size: 1.4rem;     
+    box-shadow: 0 0 10px $cta-buttonglow,0 0 20px $cta-buttonglow,0 0 30px $cta-buttonglow;   
+
+    @media only screen and (max-width: 500px){
+        font-size: 1.1rem;
+        padding: 10%;
+        margin: 3%;
+    }
+
+}
+
+
+@mixin try-knap{
+    background: $button-color;
+    color: $font-color;
+    padding: 10px 30px;
+    border-radius: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0,3s;
+    font-size: 1.4rem;     
+    box-shadow: 0 0 10px $cta-buttonglow,0 0 20px $cta-buttonglow,0 0 30px $cta-buttonglow;   
+
+    @media only screen and (max-width: 500px){
+        font-size: 1.1rem;
+        padding: 10%;
+        margin: 3%;
+    }
+
+}
+   
 /*Mixins til .....*/
