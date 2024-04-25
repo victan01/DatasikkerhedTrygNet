@@ -267,7 +267,9 @@ h2{
 #start-knap:hover{
    @include hoverforgamebutton
 }
-
+.skjult{
+    display: none;
+}
 #valgmuligheds-box {
     display: grid;
     grid-template-columns: 1fr 1fr;
