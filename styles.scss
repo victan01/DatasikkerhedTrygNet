@@ -294,11 +294,11 @@ h2{
     }
 }
 
-#try-knap{
+#slut{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+
     button{
-        grid-column: 2;
         @include try-knap
      }
 

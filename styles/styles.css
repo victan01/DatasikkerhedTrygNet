@@ -1,0 +1,500 @@
+@charset "UTF-8";
+/*Variabler*/
+/*Mixins til forside og navbar*/
+/* mixins til sikkerhedspillet*/
+/*Mixins til .....*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #090A0B;
+  font-family: "Roboto";
+  src: url(../Datasikkerhed/Fonts/Roboto/Roboto-Regular.ttf);
+}
+
+h1 {
+  font-size: 3.875rem;
+}
+
+p {
+  font-size: 1.6rem;
+}
+
+/*Navbar*/
+header {
+  position: sticky;
+  height: 80px;
+  padding: 1%;
+}
+
+.navbar-desktop {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  padding: 10px;
+  background-color: transparent;
+  width: 100%;
+}
+
+.logo {
+  max-width: 200px;
+}
+
+.Rapporter-button {
+  background: transparent;
+  border: 2px solid #F5FFFE;
+  color: #F5FFFE;
+  padding: 10px 46px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0, 3s;
+  font-size: 1.125rem;
+}
+
+.Rapporter-button:hover {
+  font-size: 1.6rem;
+}
+
+/* Navbar til mobile*/
+.navbar-mobile {
+  display: none;
+}
+
+.menu-bar {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  cursor: pointer;
+  z-index: 999;
+}
+
+.sidebar {
+  position: fixed;
+  width: 250px;
+  height: 100%;
+  background: grey;
+  transition: left 0.3s ease;
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu li {
+  padding: 10px 0;
+  border-bottom: solid white;
+}
+
+.menu a {
+  color: #F5FFFE;
+  padding-left: 50px;
+  font-size: 1.6rem;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.menu a:hover {
+  color: black;
+}
+
+.menu-btn {
+  background: transparent;
+  width: 45px;
+  height: 45px;
+  margin-right: 5px;
+  margin-top: 2px;
+  cursor: pointer;
+}
+
+/*Header slutter*/
+/* Forside starter*/
+main {
+  margin-right: 0;
+  margin-right: 0, 3 ease;
+}
+main h1 {
+  font-size: 3.875rem;
+  color: #F5FFFE;
+}
+main p {
+  font-size: 1.6rem;
+  color: #F5FFFE;
+  margin-bottom: 5%;
+}
+
+h2 {
+  font-size: 3.875rem;
+  color: #ff8a83;
+}
+
+.forside-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 5%;
+  padding: 1%;
+  margin-bottom: 10%;
+}
+
+.forside-tekst {
+  padding: 12%;
+  margin-top: 5%;
+}
+
+.forside-tekst h1, .forside-tekst h2 {
+  display: inline;
+}
+
+.borderbutton {
+  background: transparent;
+  border: 2px solid #00A3FF;
+  color: #F5FFFE;
+  padding: 10px 30px;
+  border-radius: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0, 3s;
+  font-size: 1.6rem;
+  margin-left: 1%;
+}
+@media only screen and (max-width: 768px) {
+  .borderbutton {
+    margin: 2%;
+  }
+}
+
+.borderbutton:hover {
+  font-size: 1.8rem;
+}
+
+.bluebutton {
+  background: #00A3FF;
+  border: 2px solid #00A3FF;
+  color: #F5FFFE;
+  padding: 10px 30px;
+  border-radius: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0, 3s;
+  font-size: 1.6rem;
+  margin-bottom: 3%;
+}
+@media only screen and (max-width: 768px) {
+  .bluebutton {
+    margin: 2%;
+    padding: 10px 50px;
+  }
+}
+
+.bluebutton:hover {
+  font-size: 1.8rem;
+}
+
+.forside-faktakasser {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2 1fr);
+  justify-content: center;
+  align-items: center;
+}
+
+.faktakasse {
+  width: 180px;
+  height: 180px;
+  border: 5px solid #ff8a83;
+  border-radius: 16px;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  justify-items: center;
+  align-items: center;
+  flex-direction: row;
+  font-size: 1.6rem;
+  margin: 20px;
+}
+
+.faktaikon img {
+  width: 48px;
+  height: 46px;
+  margin-top: 12px;
+}
+
+.fakta {
+  font-size: 62px;
+  color: #ff8a83;
+  position: relative;
+}
+.fakta:after {
+  position: absolute;
+  justify-content: center;
+  transform: translate(-50%, -45%);
+}
+
+.fakta-tekst p {
+  font-size: 1.1rem;
+}
+
+/* Forside slukker*/
+/* section 2 - + nav- starter*/
+.navsection {
+  z-index: 1000;
+  padding: 20px;
+  text-align: center;
+  margin-left: 55%;
+  font-size: 1.6rem;
+  position: sticky;
+}
+.navsection a {
+  color: #F5FFFE;
+  text-decoration: none;
+  padding: 5px;
+}
+.navsection a:hover {
+  color: #ff8a83;
+  font-size: 1, 4rem;
+}
+
+#datasikkerhed-section {
+  margin-top: 4%;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr) repeat(3, 1fr);
+  grid-template-rows: repeat(4, auto);
+  grid-gap: 10px;
+}
+
+.datasikkerhed-tekst {
+  padding-left: 12%;
+  grid-column: span 7;
+  grid-row: 1/2;
+}
+
+.datasikkerheds-box {
+  grid-column: span 3;
+  grid-row: 1;
+}
+
+.halvmåne {
+  width: 1000px;
+  height: 1000px;
+  border-radius: 1000px 1000px 0 0;
+  margin-top: 20%;
+  margin-left: 20%;
+  background-color: #00A3FF;
+  transform: rotate(-90deg);
+}
+@media only screen and (max-width: 500px) {
+  .halvmåne {
+    display: none;
+  }
+}
+
+/*Sikkerhedspillet starter her*/
+.Sikkerhedspil-box {
+  margin: 2%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(/Img/Img4Game/Desktopgame.png);
+  border-radius: 33%;
+  max-width: 100%;
+  height: 600px;
+  background-position: center;
+  background-size: cover;
+}
+@media only screen and (max-width: 500px) {
+  .Sikkerhedspil-box {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 0;
+  }
+}
+
+.start {
+  text-align: center;
+}
+
+#start-knap {
+  background: transparent;
+  border: 2px solid #00A3FF;
+  color: #F5FFFE;
+  padding: 10px 30px;
+  border-radius: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0, 3s;
+  font-size: 2rem;
+  box-shadow: 0 0 10px rgba(0, 216, 236, 0.882), 0 0 20px rgba(0, 216, 236, 0.882), 0 0 30px rgba(0, 216, 236, 0.882);
+}
+@media only screen and (max-width: 500px) {
+  #start-knap {
+    font-size: 1.4rem;
+    padding: 10px 20px;
+  }
+}
+
+#start-knap:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  box-shadow: 0 0 10px rgba(239, 0, 0, 0.882), 0 0 20px rgba(239, 0, 0, 0.882), 0 0 30px rgba(239, 0, 0, 0.882);
+}
+
+#valgmuligheds-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 20%;
+  gap: 50px;
+}
+#valgmuligheds-box button {
+  background: transparent;
+  border: 2px solid #00A3FF;
+  color: #F5FFFE;
+  padding: 10px 30px;
+  border-radius: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0, 3s;
+  font-size: 1.6rem;
+  box-shadow: 0 0 10px rgba(0, 216, 236, 0.882), 0 0 20px rgba(0, 216, 236, 0.882), 0 0 30px rgba(0, 216, 236, 0.882);
+}
+@media only screen and (max-width: 500px) {
+  #valgmuligheds-box button {
+    font-size: 1.2rem;
+    padding: 10%;
+    margin: 3%;
+  }
+}
+#valgmuligheds-box button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  box-shadow: 0 0 10px rgba(239, 0, 0, 0.882), 0 0 20px rgba(239, 0, 0, 0.882), 0 0 30px rgba(239, 0, 0, 0.882);
+}
+
+#svar-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+#svar-box button {
+  grid-column: 2;
+  background: black;
+  color: #F5FFFE;
+  padding: 10px 30px;
+  border-radius: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0, 3s;
+  font-size: 1.4rem;
+  box-shadow: 0 0 10px rgba(0, 216, 236, 0.882), 0 0 20px rgba(0, 216, 236, 0.882), 0 0 30px rgba(0, 216, 236, 0.882);
+}
+@media only screen and (max-width: 500px) {
+  #svar-box button {
+    font-size: 1.1rem;
+    padding: 10%;
+    margin: 3%;
+  }
+}
+#svar-box button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  box-shadow: 0 0 10px rgba(239, 0, 0, 0.882), 0 0 20px rgba(239, 0, 0, 0.882), 0 0 30px rgba(239, 0, 0, 0.882);
+}
+
+#slut {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+#slut button {
+  background: black;
+  color: #F5FFFE;
+  padding: 10px 30px;
+  border-radius: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0, 3s;
+  font-size: 2rem;
+  box-shadow: 0 0 10px rgba(0, 216, 236, 0.882), 0 0 20px rgba(0, 216, 236, 0.882), 0 0 30px rgba(0, 216, 236, 0.882);
+}
+@media only screen and (max-width: 500px) {
+  #slut button {
+    font-size: 1.4rem;
+    padding: 10%;
+    margin: 3%;
+  }
+}
+#slut button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  box-shadow: 0 0 10px rgba(239, 0, 0, 0.882), 0 0 20px rgba(239, 0, 0, 0.882), 0 0 30px rgba(239, 0, 0, 0.882);
+}
+
+/*Responsivt design*/
+@media only screen and (max-width: 768px) {
+  h1 {
+    font-size: 2.625rem;
+  }
+  p {
+    font-size: 1.1rem;
+  }
+  header {
+    height: 60px;
+  }
+  .navbar-desktop {
+    display: none;
+  }
+  .navbar-mobile {
+    display: grid;
+    grid-template-columns: 1fr auto;
+  }
+  .logo {
+    max-width: 110px;
+  }
+  #sidebar {
+    display: none;
+  }
+  main h1 {
+    font-size: 2.625rem;
+  }
+  main h2 {
+    font-size: 2.625rem;
+  }
+  .forside-section {
+    grid-template-columns: 1fr;
+  }
+  .forside-faktakasser {
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+  }
+  .navsection {
+    display: none;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .forside-faktakasser {
+    grid-template-columns: 1fr;
+    margin-bottom: 50%;
+  }
+  .datasikkerhed-tekst {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  /*Reponsivt for spil*/
+  #valgmuligheds-box {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 5%;
+  }
+  #valgmuligheds-box button {
+    background: transparent;
+    border: 2px solid #00A3FF;
+    color: #F5FFFE;
+    padding: 10px 30px;
+    border-radius: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0, 3s;
+    font-size: 1.6rem;
+    box-shadow: 0 0 10px rgba(0, 216, 236, 0.882), 0 0 20px rgba(0, 216, 236, 0.882), 0 0 30px rgba(0, 216, 236, 0.882);
+  }
+}
+@media only screen and (max-width: 500px) and (max-width: 500px) {
+  #valgmuligheds-box button {
+    font-size: 1.2rem;
+    padding: 10%;
+    margin: 3%;
+  }
+}/*# sourceMappingURL=styles.css.map */
