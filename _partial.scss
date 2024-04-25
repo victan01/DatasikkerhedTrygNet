@@ -9,10 +9,12 @@ $font-color:#F5FFFE;
 $font-color2:#ff8a83;
 $font-color3:#090A0B;
 $cta-button: #00A3FF;
+$cta-buttonglow:rgba(0, 216, 236, 0.882);
+$cta-buttonglow-hover:rgba(239, 0, 0, 0.882);
 $borderbox-color:#ff8a83;
 $Heading-font-size: 3.875rem;
 $Heading-mobile-size: 2.625rem;
-$broedtekst-font-size: 1.6rem;
+$broedtekst-font-size: 1.6rem; 
 $hover-font-size: 1,4rem;
 $faktakasse-font-size: 1.1rem;
 $button-font-size: 1.6rem;
@@ -151,12 +153,41 @@ $button-font-size: 1.6rem;
 
 @mixin game-baggrund{
     background-image: url(/Img/Img4Game/Desktopgame.png);
-    max-width: 800px;
-    margin: 0 auto;
-    
+    border-radius: 33%;
+    max-width: 100%;
+    height: 600px;
+    background-position: center;
+    background-size: cover;
 
+     @media only screen and (max-width: 500px){
+       max-width: 100%;
+       max-height: 100%;
+       border-radius: 0;
+
+     }
+} 
+
+@mixin gamebutton{
+    background: transparent;
+    border: 2px solid $cta-button;
+    color: $button-color;
+    padding: 10px 30px;
+    border-radius: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0,3s;
+    font-size: 2.0rem;     
+    box-shadow: 0 0 10px $cta-buttonglow,0 0 20px $cta-buttonglow,0 0 30px $cta-buttonglow;   
+
+    @media only screen and (max-width: 500px){
+        font-size: 1.4rem;
+        padding: 10px 20px;
+    }
 }
 
-
+@mixin hoverforgamebutton{
+    cursor: pointer;
+    transform: scale(1.1);
+    box-shadow: 0 0 10px $cta-buttonglow-hover,0 0 20px $cta-buttonglow-hover,0 0 30px $cta-buttonglow-hover; 
+}
 
 /*Mixins til .....*/

@@ -245,12 +245,30 @@ h2{
 
 
 /*Sikkerhedspillet starter her*/ 
+
 .Sikkerhedspil-box{
-    
+    margin: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include game-baggrund
+
+   
 }
 
+.start{
+    text-align: center;
+}
 
+#start-knap{
+  @include gamebutton      
+}
 
+#start-knap:hover{
+   @include hoverforgamebutton
+}
+
+   
 /*Responsivt design*/ 
 
 @media only screen and (max-width: 768px) {
@@ -326,6 +344,8 @@ h2{
         grid-template-columns: 1fr;
     
   }
+
 }
+
    
 
