@@ -89,3 +89,10 @@ const Taberlyd = document.getElementById('taberlyd')
         showQuestion();
     }
 
+/* Spørgsmål og valgmuligheder tilføjes*/
+function showQuestion(){
+    const spørgsmål = questions[currentQuestionIndex];
+
+}
+
+
