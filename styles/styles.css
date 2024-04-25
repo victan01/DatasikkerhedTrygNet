@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*Variabler*/
 /*Mixins til forside og navbar*/
 /*Mixins til .....*/
@@ -255,22 +256,35 @@ h2 {
 #datasikkerhed-section {
   margin-top: 4%;
   display: grid;
-  grid-template-columns: repeat(10, 1fr);
+  grid-template-columns: repeat(7, 1fr) repeat(3, 1fr);
   grid-template-rows: repeat(4, auto);
+  grid-gap: 10px;
 }
 
 .datasikkerhed-tekst {
   padding-left: 12%;
-  grid-column: span 6;
+  grid-column: span 7;
+  grid-row: 1/2;
 }
 
-.datasikkerheds-billede {
-  grid-column: span 4;
+.datasikkerheds-box {
+  grid-column: span 3;
+  grid-row: 1;
 }
 
-.datasikkerheds-billede img {
-  width: 600px;
-  height: 1200px;
+.halvmåne {
+  width: 1000px;
+  height: 1000px;
+  border-radius: 1000px 1000px 0 0;
+  margin-top: 20%;
+  margin-left: 20%;
+  background-color: #00A3FF;
+  transform: rotate(-90deg);
+}
+@media only screen and (max-width: 500px) {
+  .halvmåne {
+    display: none;
+  }
 }
 
 /*Responsivt design*/
@@ -317,9 +331,10 @@ h2 {
 @media only screen and (max-width: 500px) {
   .forside-faktakasser {
     grid-template-columns: 1fr;
+    margin-bottom: 50%;
   }
-  #datasikkerhed-section img {
-    width: 340px;
-    height: 200px;
+  .datasikkerhed-tekst {
+    display: grid;
+    grid-template-columns: 1fr;
   }
 }/*# sourceMappingURL=styles.css.map */
