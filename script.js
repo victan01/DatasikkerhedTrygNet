@@ -33,3 +33,7 @@ valueDisplays.forEach((valueDisplays)=>{
         }
     }, duration);
 });
+
+
+
+/*Sikkerhedspillet*/
