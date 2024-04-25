@@ -253,22 +253,24 @@ h2 {
 }
 
 #datasikkerhed-section {
-  background-color: white;
-  color: #090A0B;
+  margin-top: 4%;
   display: grid;
-  grid-template-columns: 100px 100px 100px 100px 100px 100px;
-  grid-template-rows: 100px 100px 100px 100px 100px 100px;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(4, auto);
 }
 
 .datasikkerhed-tekst {
   padding-left: 12%;
-  grid-row: 1/4;
-  grid-column: 1/6;
+  grid-column: span 6;
 }
 
 .datasikkerheds-billede {
-  grid-row: span 1;
-  grid-column: span 1;
+  grid-column: span 4;
+}
+
+.datasikkerheds-billede img {
+  width: 600px;
+  height: 1200px;
 }
 
 /*Responsivt design*/
