@@ -253,12 +253,22 @@ h2 {
 }
 
 #datasikkerhed-section {
+  background-color: white;
+  color: #090A0B;
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 100px 100px 100px 100px 100px 100px;
+  grid-template-rows: 100px 100px 100px 100px 100px 100px;
 }
 
 .datasikkerhed-tekst {
-  padding: 12%;
+  padding-left: 12%;
+  grid-row: 1/4;
+  grid-column: 1/6;
+}
+
+.datasikkerheds-billede {
+  grid-row: span 1;
+  grid-column: span 1;
 }
 
 /*Responsivt design*/
