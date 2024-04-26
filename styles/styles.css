@@ -290,33 +290,36 @@ h2 {
 }
 
 /*Sikkerhedspillet starter her*/
+.mainforspil {
+  margin: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .Sikkerhedspil-box {
   margin: 2%;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
   background-size: cover;
   background-position: center;
   transition: background-image 0.5s ease;
 }
 
-.intro {
-  display: flex;
-  flex-direction: column;
+.introduktion {
+  display: grid;
+  grid-template-columns: 1fr;
   justify-content: center;
   align-items: center;
-  padding: 20px;
-  background-color: rgba(255, 255, 255, 0.8);
-  border-radius: 10px;
   background-image: url(Img/Img4Game/Anna.png);
   background-size: cover;
   background-blend-mode: overlay;
+  text-align: left;
 }
 
-.intro h1 p {
-  margin-top: 0;
-  text-align: center;
+.introduktion img {
+  align-self: center;
 }
 
 .start {
