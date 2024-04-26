@@ -53,9 +53,11 @@ const Rigtigtsvar = document.getElementById('rigtigtsvar')
 const Vinderlyd = document.getElementById('vinderlyd')
 const Taberlyd = document.getElementById('taberlyd')
 
+let currentQuestionIndex = 0;
+let score = 0;
 
 /* Dernæst påbegynder jeg mine spørgsmål med svarmuligheder*/
- const Spørgsmål = [
+ const questionss = [
   {
     question: 'Anna er på udgik efter sin drømme computer og finder en butik, som sælger den til en meget lav pris',
     options: {'Klikke på "Køb nu" og købe den med det samme':'Undersøge butikken nærmere for at sikre sig, at den er troværdig' }
@@ -75,7 +77,7 @@ const Taberlyd = document.getElementById('taberlyd')
 
   {
     question: 'Anna skal købe en kjole og hun opdager online butikken ikke har nogle kontaktinformationer ',
-    options: {'En butik behøver ikke kontaktinformation, så hun køber bare kjolen': 'Undersøger websitet og tjekker eventuelle anmeldelser for at sikre butikken er troværdig' }
+    opstions: {'En butik behøver ikke kontaktinformation, så hun køber bare kjolen': 'Undersøger websitet og tjekker eventuelle anmeldelser for at sikre butikken er troværdig' }
     ,correctAnswerIndex : 1
   } 
 ]
@@ -91,15 +93,27 @@ const Taberlyd = document.getElementById('taberlyd')
 
 /* Spørgsmål og valgmuligheder tilføjes*/
 function showQuestion() {
-  const question = question;
-  SpørgsmålsTekst.innerText = question.question;
+  const currentQuestion = questionss[currentQuestionIndex];
+  SpørgsmålsTekst.innerText = currentQuestion.question;
   ValgmulighedsBox.innerHTML = '';
-  question.opstions.forEach((option, index) => {
-      const button = document.createElement('button');
-      button.innerText = option;
-      button.classList.add('valgmulighedsknap');
-      button.addEventListener('click', () => selectAnswer(index));
-      ValgmulighedsBox.appendChild(button);
+  currentQuestion.options.forEach((option, index) => {
+    const button = document.createElement('button');
+    button.innerText = option;
+    button.classList.add('valgmulighedsknap');
+    button.addEventListener('click', () => selectAnswer(index));
+    ValgmulighedsBox.appendChild(button);
   });
-}
 
+  function selectAnswer(selectedIndex) {
+    const question = questions[currentQuestionIndex];
+    if (selectedIndex === question.correctAnswerIndex) {
+        score += 25;
+        SvarTekst.innerText = 'Korrekt!';
+        correctSound.play();
+    } else {
+        SvarTekst.innerText = 'Forkert!';
+        wrongSound.play();
+    }
+    showResult();
+}
+}

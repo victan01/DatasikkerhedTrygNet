@@ -153,6 +153,9 @@ $button-font-size: 1.6rem;
 /* mixins til sikkerhedspillet*/
 
 @mixin game-baggrund{
+    .introduktion h1 p{
+        display: none;
+    }
     background-color: transparent;
     border-radius: 33%;
     max-width: 100%;

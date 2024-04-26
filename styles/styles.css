@@ -305,6 +305,7 @@ h2 {
   background-size: cover;
   background-position: center;
   transition: background-image 0.5s ease;
+  color: #F5FFFE;
 }
 
 .introduktion {
@@ -351,6 +352,9 @@ h2 {
   height: 600px;
   background-position: center;
   background-size: cover;
+}
+#spørgsmålsbox .introduktion h1 p {
+  display: none;
 }
 @media only screen and (max-width: 500px) {
   #spørgsmålsbox {
