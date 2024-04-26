@@ -251,9 +251,32 @@ h2{
     display: flex;
     justify-content: center;
     align-items: center;
-    @include game-baggrund
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    transition: background-image 0.5s ease;
+}
 
+.intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    background-image: url(Img/Img4Game/Anna.png);
+    background-size: cover;
+    background-blend-mode: overlay;
+}
+.intro img{
    
+}
+
+.intro h1 p{
+    margin-top: 0;
+    text-align: center;
 }
 
 .start{
@@ -262,6 +285,10 @@ h2{
 
 #start-knap{
   @include gamebutton      
+}
+
+#spørgsmålsbox{
+    @include game-baggrund   
 }
 
 #start-knap:hover{

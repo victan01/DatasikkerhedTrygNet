@@ -295,19 +295,28 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url(/Img/Img4Game/Desktopgame.png);
-  border-radius: 33%;
-  max-width: 100%;
-  height: 600px;
-  background-position: center;
+  height: 100vh;
   background-size: cover;
+  background-position: center;
+  transition: background-image 0.5s ease;
 }
-@media only screen and (max-width: 500px) {
-  .Sikkerhedspil-box {
-    max-width: 100%;
-    max-height: 100%;
-    border-radius: 0;
-  }
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  background-image: url(Img/Img4Game/Anna.png);
+  background-size: cover;
+  background-blend-mode: overlay;
+}
+
+.intro h1 p {
+  margin-top: 0;
+  text-align: center;
 }
 
 .start {
@@ -329,6 +338,22 @@ h2 {
   #start-knap {
     font-size: 1.4rem;
     padding: 10px 20px;
+  }
+}
+
+#spørgsmålsbox {
+  background-image: url(/Img/Img4Game/Desktopgame.png);
+  border-radius: 33%;
+  max-width: 100%;
+  height: 600px;
+  background-position: center;
+  background-size: cover;
+}
+@media only screen and (max-width: 500px) {
+  #spørgsmålsbox {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 0;
   }
 }
 
