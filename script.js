@@ -58,24 +58,24 @@ const Taberlyd = document.getElementById('taberlyd')
  const Spørgsmål = [
   {
     question: 'Anna er på udgik efter sin drømme computer og finder en butik, som sælger den til en meget lav pris',
-    opstions: {'Klikke på "Køb nu" og købe den med det samme':'Undersøge butikken nærmere for at sikre sig, at den er troværdig' }
+    options: {'Klikke på "Køb nu" og købe den med det samme':'Undersøge butikken nærmere for at sikre sig, at den er troværdig' }
     ,correctAnswerIndex : 1
   },
   {
     question: 'Anna støder på en online butik med profesionelt design og meget positive anmeldelser',
-    opstions: {'Stole på butikkens troværdighed og foretage købet med det samme':'Undersøge ydligere for at sikre at butikken er troværdig' }
+    options: {'Stole på butikkens troværdighed og foretage købet med det samme':'Undersøge ydligere for at sikre at butikken er troværdig' }
     ,correctAnswerIndex : 1
   },
 
   {
     question: 'Anna opdager den online butik hun er inde på kræver en anderledes betallingsmetode som gavekort og bankoverførsel istedet for kreditkort og paypal ',
-    opstions: {'Stoppe købet og undersøge yderligere for at undgå svindel': 'Følge den nye betallingsmetode for at undgå svindel' }
+    options: {'Stoppe købet og undersøge yderligere for at undgå svindel': 'Følge den nye betallingsmetode for at undgå svindel' }
     ,correctAnswerIndex : 0
   },
 
   {
     question: 'Anna skal købe en kjole og hun opdager online butikken ikke har nogle kontaktinformationer ',
-    opstions: {'En butik behøver ikke kontaktinformation, så hun køber bare kjolen': 'Undersøger websitet og tjekker eventuelle anmeldelser for at sikre butikken er troværdig' }
+    options: {'En butik behøver ikke kontaktinformation, så hun køber bare kjolen': 'Undersøger websitet og tjekker eventuelle anmeldelser for at sikre butikken er troværdig' }
     ,correctAnswerIndex : 1
   } 
 ]
@@ -91,8 +91,7 @@ const Taberlyd = document.getElementById('taberlyd')
 
 /* Spørgsmål og valgmuligheder tilføjes*/
 function showQuestion() {
-  const question = Spørgsmål[currentQuestionIndex];
-  console.log(question)
+  const question = question;
   SpørgsmålsTekst.innerText = question.question;
   ValgmulighedsBox.innerHTML = '';
   question.opstions.forEach((option, index) => {
