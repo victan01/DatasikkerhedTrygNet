@@ -42,7 +42,7 @@ const StartKnap = document.getElementById('start-knap')
 const SpørgsmålsBox = document.getElementById('spørgsmålsbox')
 const SpørgsmålsTekst = document.getElementById('spørgsmålstekst')
 const ValgmulighedsBox = document.getElementById('valgmuligheds-box')
-const Valgmulighedsknapper = document.getElementById('spørgsmålstekst')
+const Valgmulighedsknapper = document.getElementById('valgmulighedsknap')
 const SvarBox = document.getElementById('svar-box')
 const SvarTekst = document.getElementById('svartekst')
 const FortsætKnap = document.getElementById('fortsæt-knap')
@@ -90,9 +90,17 @@ const Taberlyd = document.getElementById('taberlyd')
     }
 
 /* Spørgsmål og valgmuligheder tilføjes*/
-function showQuestion(){
-    const spørgsmål = questions[currentQuestionIndex];
-
+function showQuestion() {
+  const question = Spørgsmål[currentQuestionIndex];
+  console.log(question)
+  SpørgsmålsTekst.innerText = question.question;
+  ValgmulighedsBox.innerHTML = '';
+  question.opstions.forEach((option, index) => {
+      const button = document.createElement('button');
+      button.innerText = option;
+      button.classList.add('valgmulighedsknap');
+      button.addEventListener('click', () => selectAnswer(index));
+      ValgmulighedsBox.appendChild(button);
+  });
 }
-
 

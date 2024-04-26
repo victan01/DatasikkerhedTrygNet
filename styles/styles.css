@@ -345,7 +345,7 @@ h2 {
 }
 
 #spørgsmålsbox {
-  background-image: url(/Img/Img4Game/Desktopgame.png);
+  background-color: transparent;
   border-radius: 33%;
   max-width: 100%;
   height: 600px;
