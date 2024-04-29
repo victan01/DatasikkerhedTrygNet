@@ -290,10 +290,6 @@ h2 {
 }
 
 /*Sikkerhedspillet starter her*/
-.skjult {
-  display: none;
-}
-
 .mainforspil {
   margin: 10%;
   display: flex;
@@ -368,22 +364,6 @@ h2 {
   }
 }
 
-#start-knap:hover {
-  cursor: pointer;
-  transform: scale(1.1);
-  box-shadow: 0 0 10px rgba(239, 0, 0, 0.882), 0 0 20px rgba(239, 0, 0, 0.882), 0 0 30px rgba(239, 0, 0, 0.882);
-}
-
-.skjult {
-  display: none;
-}
-
-#valgmuligheds-box {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin: 20%;
-  gap: 50px;
-}
 #valgmuligheds-box button {
   background: transparent;
   border: 2px solid #00A3FF;
@@ -402,10 +382,15 @@ h2 {
     margin: 3%;
   }
 }
-#valgmuligheds-box button:hover {
+
+#start-knap:hover {
   cursor: pointer;
   transform: scale(1.1);
   box-shadow: 0 0 10px rgba(239, 0, 0, 0.882), 0 0 20px rgba(239, 0, 0, 0.882), 0 0 30px rgba(239, 0, 0, 0.882);
+}
+
+.skjult {
+  display: none;
 }
 
 #svar-box {

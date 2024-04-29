@@ -246,9 +246,6 @@ h2{
 
 /*Sikkerhedspillet starter her*/ 
 
-.skjult{
-    display: none;
-}
 
 .mainforspil{
     margin: 10%;
@@ -294,25 +291,16 @@ h2{
 #spørgsmålsbox{
     @include game-baggrund   
 }
-
+#valgmuligheds-box button{
+    @include valgmulighedbutton
+}
 #start-knap:hover{
    @include hoverforgamebutton
 }
 .skjult{
     display: none;
 }
-#valgmuligheds-box {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin: 20%;
-    gap: 50px;
-    button {
-    @include valgmulighedbutton
-}
-    button:hover{
-        @include hoverforgamebutton
-    }
-}
+
 
 #svar-box{
     display: grid;

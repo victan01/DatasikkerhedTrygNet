@@ -38,11 +38,12 @@ valueDisplays.forEach((valueDisplays)=>{
 
 /*Sikkerhedspillet*/
 /* Jeg kalder først på mine ID*/
-const introduktion = document.getElementsById('introduktion')
 const startBtn = document.getElementById('start-knap')
 const questionContainer = document.getElementById('spørgsmålsbox')
 const questionText = document.getElementById('spørgsmålstekst')
 const optionContainer = document.getElementById('valgmuligheds-box')
+const optionBtn = document.getElementById('valgmulighedsknap')
+
 const resultContainer = document.getElementById('svar-box')
 const resultText = document.getElementById('svartekst')
 const continueBtn = document.getElementById('fortsæt-knap')
@@ -60,26 +61,26 @@ let score = 0;
 /* Dernæst påbegynder jeg mine spørgsmål med svarmuligheder*/
  const questions = [
   {
-    question: 'Anna er på udgik efter sin drømme computer og finder en butik, som sælger den til en meget lav pris',
-    options: {'Klikke på "Køb nu" og købe den med det samme':'Undersøge butikken nærmere for at sikre sig, at den er troværdig' },
+    question: 'Anna er på udgik efter sin drømme computer og finder en butik, som sælger den til en meget lav pris'
+    ,options: ['Klikke på "Køb nu" og købe den med det samme','Undersøge butikken nærmere for at sikre sig, at den er troværdig' ],
     correctAnswerIndex : 1
     
   },
   {
     question: 'Anna støder på en online butik med profesionelt design og meget positive anmeldelser',
-    options: {'Stole på butikkens troværdighed og foretage købet med det samme':'Undersøge ydligere for at sikre at butikken er troværdig' }
+    options: ['Stole på butikkens troværdighed og foretage købet med det samme','Undersøge ydligere for at sikre at butikken er troværdig' ]
     ,correctAnswerIndex : 1
   },
 
   {
     question: 'Anna opdager den online butik hun er inde på kræver en anderledes betallingsmetode som gavekort og bankoverførsel istedet for kreditkort og paypal ',
-    options: {'Stoppe købet og undersøge yderligere for at undgå svindel': 'Følge den nye betallingsmetode for at undgå svindel' }
+    options: ['Stoppe købet og undersøge yderligere for at undgå svindel','Følge den nye betallingsmetode for at undgå svindel' ]
     ,correctAnswerIndex : 0
   },
 
   {
     question: 'Anna skal købe en kjole og hun opdager online butikken ikke har nogle kontaktinformationer ',
-    opstions: {'En butik behøver ikke kontaktinformation, så hun køber bare kjolen': 'Undersøger websitet og tjekker eventuelle anmeldelser for at sikre butikken er troværdig' }
+    opstions: ['En butik behøver ikke kontaktinformation, så hun køber bare kjolen','Undersøger websitet og tjekker eventuelle anmeldelser for at sikre butikken er troværdig']
     ,correctAnswerIndex : 1
   } 
 ]
@@ -91,13 +92,14 @@ let score = 0;
         console.log(startBtn);
         startBtn.classList.add('skjult');
         slut.classList.add('skjult');
-        introduktion.classList.add('skjult')
         questionContainer.classList.remove('skjult');
         showQuestion();
     }
 
 /* Spørgsmål og valgmuligheder tilføjes*/
 function showQuestion() {
+  const intro = document.getElementById('introduktion');
+  intro.classList.add('skjult');
   const question = questions[currentQuestionIndex];
   questionText.innerText = question.question;
   optionContainer.innerHTML = '';
