@@ -132,6 +132,21 @@ function showQuestion() {
         else{
           continueBtn.classList.remove('skjult');
         }
-  }
+}
 
+  continueBtn.addEventListener('click',()=>{
+      resultContainer.classList.add('skjult');
+      questionContainer.classList.remove('skjult');
+      currentQuestionIndex++;
+      if (currentQuestionIndex < questions.length){
+          showQuestion();
+      }
+        else{
+          endQuiz();
+        }
+  })
+
+
+  /* afslutning af quiz*/ 
+  
 
