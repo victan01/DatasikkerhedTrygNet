@@ -38,16 +38,16 @@ valueDisplays.forEach((valueDisplays)=>{
 
 /*Sikkerhedspillet*/
 /* Jeg kalder først på mine ID*/
-const StartKnap = document.getElementById('start-knap')
-const SpørgsmålsBox = document.getElementById('spørgsmålsbox')
-const SpørgsmålsTekst = document.getElementById('spørgsmålstekst')
-const ValgmulighedsBox = document.getElementById('valgmuligheds-box')
-const Valgmulighedsknapper = document.getElementById('valgmulighedsknap')
-const SvarBox = document.getElementById('svar-box')
-const SvarTekst = document.getElementById('svartekst')
-const FortsætKnap = document.getElementById('fortsæt-knap')
-const Slut = document.getElementById('slut')
-const PointTælling = document.getElementById('point-tælling')
+const startBtn = document.getElementById('start-knap')
+const questionContainer = document.getElementById('spørgsmålsbox')
+const questionText = document.getElementById('spørgsmålstekst')
+const optionContainer = document.getElementById('valgmuligheds-box')
+const resultContainer = document.getElementById('svar-box')
+const resultText = document.getElementById('svartekst')
+const continueBtn = document.getElementById('fortsæt-knap')
+const slut = document.getElementById('slut')
+const finalScore = document.getElementById('point-tælling')
+const restartBtn = document.getElementById('try-knap')
 const Forkertsvar = document.getElementById('forkertsvar')
 const Rigtigtsvar = document.getElementById('rigtigtsvar')
 const Vinderlyd = document.getElementById('vinderlyd')
@@ -57,11 +57,12 @@ let currentQuestionIndex = 0;
 let score = 0;
 
 /* Dernæst påbegynder jeg mine spørgsmål med svarmuligheder*/
- const questionss = [
+ const questions = [
   {
     question: 'Anna er på udgik efter sin drømme computer og finder en butik, som sælger den til en meget lav pris',
-    options: {'Klikke på "Køb nu" og købe den med det samme':'Undersøge butikken nærmere for at sikre sig, at den er troværdig' }
-    ,correctAnswerIndex : 1
+    options: {'Klikke på "Køb nu" og købe den med det samme':'Undersøge butikken nærmere for at sikre sig, at den er troværdig' },
+    correctAnswerIndex : 1
+    
   },
   {
     question: 'Anna støder på en online butik med profesionelt design og meget positive anmeldelser',
@@ -83,37 +84,54 @@ let score = 0;
 ]
 
 /* Event og elementer, som skal skjules tilføjes + Spillet startes*/
- StartKnap.addEventListener('click', startQuiz)
+ startBtn.addEventListener('click', startQuiz);
+
     function startQuiz () {
-        StartKnap.classList.add('skjult');
-        Slut.classList.add('skjult');
-        SpørgsmålsBox.classList.remove('skjult');
+        console.log(startBtn);
+        startBtn.classList.add('skjult');
+        slut.classList.add('skjult');
+        questionContainer.classList.remove('skjult');
         showQuestion();
     }
 
 /* Spørgsmål og valgmuligheder tilføjes*/
 function showQuestion() {
-  const currentQuestion = questionss[currentQuestionIndex];
-  SpørgsmålsTekst.innerText = currentQuestion.question;
-  ValgmulighedsBox.innerHTML = '';
-  currentQuestion.options.forEach((option, index) => {
+  const question = questions[currentQuestionIndex];
+  questionText.innerText = question.question;
+  optionContainer.innerHTML = '';
+  question.options.forEach((option, index) => {
     const button = document.createElement('button');
     button.innerText = option;
     button.classList.add('valgmulighedsknap');
     button.addEventListener('click', () => selectAnswer(index));
-    ValgmulighedsBox.appendChild(button);
+    optionContainer.appendChild(button);
   });
+}
 
+/* Valg af svagmulighedsdel + resultat*/ 
   function selectAnswer(selectedIndex) {
     const question = questions[currentQuestionIndex];
     if (selectedIndex === question.correctAnswerIndex) {
         score += 25;
-        SvarTekst.innerText = 'Korrekt!';
+        resultText.innerText = 'Korrekt!';
         correctSound.play();
     } else {
-        SvarTekst.innerText = 'Forkert!';
+        resultText.innerText = 'Forkert!';
         wrongSound.play();
     }
     showResult();
 }
-}
+
+  function showResult(){
+    resultContainer.classList.remove('skjult')
+    questionContainer.classList.add('skjult')
+    finalScore.innerText = 'score:'+ score;
+      if(currentQuestionIndex === questions.length - 1) {
+        continueBtn.classList.add('skjult');
+      }
+        else{
+          continueBtn.classList.remove('skjult');
+        }
+  }
+
+
