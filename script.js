@@ -101,6 +101,7 @@ function showQuestion() {
   const intro = document.getElementById('introduktion');
   intro.classList.add('skjult');
   const question = questions[currentQuestionIndex];
+  continueBtn.classList.remove('skjult');
   questionText.innerText = question.question;
   optionContainer.innerHTML = '';
   question.options.forEach((option, index) => {
@@ -126,35 +127,33 @@ function showQuestion() {
     showResult();
 }
 
-  function showResult(){
-    resultContainer.classList.remove('skjult')
-    questionContainer.classList.add('skjult')
-    finalScore.innerText = 'score: '+ score;
-    if(currentQuestionIndex < questions.length - 1) {
+ function showResult() {
+  resultContainer.classList.remove('skjult');
+  questionContainer.classList.add('skjult');
+  finalScore.innerText = 'score: ' + score;
+  if (currentQuestionIndex === questions.length - 1) {
       continueBtn.classList.add('skjult');
-      continueBtn.classList.remove('skjult')
-    } else{
-      continueBtn.classList.add('skjult');
-    }
+  } else {
+      continueBtn.classList.remove('skjult');
+  }
 }
 
-  continueBtn.addEventListener('click',()=>{
-      resultContainer.classList.add('skjult');
-      questionContainer.classList.add('skjult');
-      currentQuestionIndex++;
-      if (currentQuestionIndex < questions.length){
-          showQuestion();
-      }
-        else{
-          endQuiz();
-        }
-  })
+ continueBtn.addEventListener('click', () => {
+  resultContainer.classList.add('skjult');
+  questionContainer.classList.add('skjult');
+  currentQuestionIndex++;
+  if (currentQuestionIndex < questions.length) {
+      showQuestion();
+  } else {
+      endQuiz();
+  }
+});
 
   /* afslutning af quiz*/ 
 
     function endQuiz(){
-    questionContainer.classList.add('skjult')
-    slut.classList.remove('skjult')
+    questionContainer.classList.add('skjult');
+    slut.classList.remove('skjult');
     finalScore.innerText = 'Endelige score: ' + score;
       if(score === questions.length * 25) {
       resultText.innerText = 'Tillykke du har vundet! og er godt sikret i at handle online.';
