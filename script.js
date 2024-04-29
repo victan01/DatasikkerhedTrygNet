@@ -86,17 +86,19 @@ let score = 0;
 
 /* Event og elementer, som skal skjules tilføjes + Spillet startes*/
  startBtn.addEventListener('click', startQuiz);
-
     function startQuiz () {
         console.log(startBtn);
         startBtn.classList.add('skjult');
         slut.classList.add('skjult');
+        continueBtn.classList.add('skjult')
         questionContainer.classList.remove('skjult');
         showQuestion();
+
     }
 
 /* Spørgsmål og valgmuligheder tilføjes*/
 function showQuestion() {
+  continueBtn.classList.remove('skjult')
   const intro = document.getElementById('introduktion');
   intro.classList.add('skjult');
   const question = questions[currentQuestionIndex];
@@ -153,6 +155,8 @@ function showQuestion() {
     function endQuiz(){
     questionContainer.classList.add('skjult');
     slut.classList.remove('skjult');
+    continueBtn.classList.add('skjult');
+    restartBtn.classList.remove('skjult')
     finalScore.innerText = 'Endelige score: ' + score;
       if(score === questions.length * 25) {
       resultText.innerText = 'Tillykke du har vundet! og er godt sikret i at handle online.';
@@ -163,9 +167,13 @@ function showQuestion() {
         loseSound.play();
       }
   }
-  
+
+  /*genstart hvis der ønskes at prøve igen*/ 
   restartBtn.addEventListener('click',()=>{
     currentQuestionIndex = 0;
     score = 0;
     startQuiz();
+    restartBtn.classList.add('skjult')
+    continueBtn.classList.remove('skjult');
+
   });
