@@ -290,6 +290,10 @@ h2 {
 }
 
 /*Sikkerhedspillet starter her*/
+.skjult {
+  display: none;
+}
+
 .mainforspil {
   margin: 10%;
   display: flex;

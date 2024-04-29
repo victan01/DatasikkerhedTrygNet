@@ -38,6 +38,7 @@ valueDisplays.forEach((valueDisplays)=>{
 
 /*Sikkerhedspillet*/
 /* Jeg kalder først på mine ID*/
+const introduktion = document.getElementsById('introduktion')
 const startBtn = document.getElementById('start-knap')
 const questionContainer = document.getElementById('spørgsmålsbox')
 const questionText = document.getElementById('spørgsmålstekst')
@@ -90,6 +91,7 @@ let score = 0;
         console.log(startBtn);
         startBtn.classList.add('skjult');
         slut.classList.add('skjult');
+        introduktion.classList.add('skjult')
         questionContainer.classList.remove('skjult');
         showQuestion();
     }
@@ -146,7 +148,24 @@ function showQuestion() {
         }
   })
 
-
   /* afslutning af quiz*/ 
-  
 
+    function endQuiz(){
+    questionContainer.classList.add('skjult')
+    slut.classList.remove('skjult')
+    finalScore.innerText = 'Endelige score: ' + score;
+      if(score === questions.length * 25) {
+      resultText.innerText = 'Tillykke du har vundet! og er godt sikret i at handle online.';
+      winSound.play();
+     }
+      else{
+        resultText.innerText = 'Desværre du har tabt! og er ikke 100% sikret i at handle online.';
+        loseSound.play();;
+      }
+  }
+  
+  restartBtn.addEventListener('click',()=>{
+    currentQuestionIndex = 0;
+    score = 0;
+    startQuiz();
+  });
