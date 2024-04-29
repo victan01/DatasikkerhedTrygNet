@@ -43,7 +43,6 @@ const questionContainer = document.getElementById('spørgsmålsbox')
 const questionText = document.getElementById('spørgsmålstekst')
 const optionContainer = document.getElementById('valgmuligheds-box')
 const optionBtn = document.getElementById('valgmulighedsknap')
-
 const resultContainer = document.getElementById('svar-box')
 const resultText = document.getElementById('svartekst')
 const continueBtn = document.getElementById('fortsæt-knap')
@@ -80,7 +79,7 @@ let score = 0;
 
   {
     question: 'Anna skal købe en kjole og hun opdager online butikken ikke har nogle kontaktinformationer ',
-    opstions: ['En butik behøver ikke kontaktinformation, så hun køber bare kjolen', 'Undersøger websitet og tjekker eventuelle anmeldelser for at sikre butikken er troværdig']
+    options: ['En butik behøver ikke kontaktinformation, så hun køber bare kjolen', 'Undersøger websitet og tjekker eventuelle anmeldelser for at sikre butikken er troværdig']
     ,correctAnswerIndex : 1
   } 
 ]
@@ -101,7 +100,6 @@ function showQuestion() {
   const intro = document.getElementById('introduktion');
   intro.classList.add('skjult');
   const question = questions[currentQuestionIndex];
-  continueBtn.classList.remove('skjult');
   questionText.innerText = question.question;
   optionContainer.innerHTML = '';
   question.options.forEach((option, index) => {
@@ -125,28 +123,29 @@ function showQuestion() {
         wrongSound.play();
     }
     showResult();
+
 }
 
  function showResult() {
-  resultContainer.classList.remove('skjult');
-  questionContainer.classList.add('skjult');
-  finalScore.innerText = 'score: ' + score;
-  if (currentQuestionIndex === questions.length - 1) {
-      continueBtn.classList.add('skjult');
-  } else {
+  resultContainer.classList.remove('skjult')
+  questionContainer.classList.add('skjult')
+  finalScore.innerText = 'Score: ' + score;
+    if (currentQuestionIndex === questions.length - 1) {
       continueBtn.classList.remove('skjult');
-  }
-}
+     } else {
+      continueBtn.classList.add('skjult');
+     }
+}  
 
- continueBtn.addEventListener('click', () => {
-  resultContainer.classList.add('skjult');
-  questionContainer.classList.add('skjult');
-  currentQuestionIndex++;
-  if (currentQuestionIndex < questions.length) {
+  continueBtn.addEventListener('click', () => {
+     resultContainer.classList.add('skjult');
+     questionContainer.classList.remove('skjult');
+     currentQuestionIndex++;
+      if (currentQuestionIndex < questions.length) {
       showQuestion();
-  } else {
+     }  else {
       endQuiz();
-  }
+     }
 });
 
   /* afslutning af quiz*/ 
@@ -161,7 +160,7 @@ function showQuestion() {
      }
       else{
         resultText.innerText = 'Desværre du har tabt! og er ikke 100% sikret i at handle online.';
-        loseSound.play();;
+        loseSound.play();
       }
   }
   
