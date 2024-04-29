@@ -80,7 +80,7 @@ let score = 0;
 
   {
     question: 'Anna skal købe en kjole og hun opdager online butikken ikke har nogle kontaktinformationer ',
-    opstions: ['En butik behøver ikke kontaktinformation, så hun køber bare kjolen','Undersøger websitet og tjekker eventuelle anmeldelser for at sikre butikken er troværdig']
+    opstions: ['En butik behøver ikke kontaktinformation, så hun køber bare kjolen', 'Undersøger websitet og tjekker eventuelle anmeldelser for at sikre butikken er troværdig']
     ,correctAnswerIndex : 1
   } 
 ]
@@ -129,18 +129,18 @@ function showQuestion() {
   function showResult(){
     resultContainer.classList.remove('skjult')
     questionContainer.classList.add('skjult')
-    finalScore.innerText = 'score:'+ score;
-      if(currentQuestionIndex === questions.length - 1) {
-        continueBtn.classList.add('skjult');
-      }
-        else{
-          continueBtn.classList.remove('skjult');
-        }
+    finalScore.innerText = 'score: '+ score;
+    if(currentQuestionIndex < questions.length - 1) {
+      continueBtn.classList.add('skjult');
+      continueBtn.classList.remove('skjult')
+    } else{
+      continueBtn.classList.add('skjult');
+    }
 }
 
   continueBtn.addEventListener('click',()=>{
       resultContainer.classList.add('skjult');
-      questionContainer.classList.remove('skjult');
+      questionContainer.classList.add('skjult');
       currentQuestionIndex++;
       if (currentQuestionIndex < questions.length){
           showQuestion();
