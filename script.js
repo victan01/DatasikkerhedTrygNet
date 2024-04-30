@@ -90,9 +90,10 @@ let score = 0;
         console.log(startBtn);
         startBtn.classList.add('skjult');
         slut.classList.add('skjult');
-        continueBtn.classList.add('skjult')
         questionContainer.classList.remove('skjult');
         showQuestion();
+        continueBtn.classList.remove('skjult')
+
 
     }
 
@@ -119,11 +120,11 @@ function showQuestion() {
     if (selectedIndex === question.correctAnswerIndex) {
         score += 25;
         resultText.innerText = 'Korrekt! Godt klaret!';
-        correctSound.play();
+        Rigtigtsvar.play();
         handleCorrectConsequence(selectedIndex);
     } else {
         resultText.innerText = 'Forkert! Prøv igen.';
-        wrongSound.play();
+        Forkertsvar.play();
         handleIncorrectConsequence(selectedIndex);
     }
     showResult();
@@ -174,12 +175,12 @@ function showQuestion() {
   resultContainer.classList.remove('skjult')
   questionContainer.classList.add('skjult')
   finalScore.innerText = 'Score: ' + score;
-    if (currentQuestionIndex === questions.length - 1) {
-      continueBtn.classList.remove('skjult');
-     } else {
-      continueBtn.classList.add('skjult');
-     }
-}  
+  if (currentQuestionIndex === questions.length - 1) {
+    continueBtn.innerText = "Afslut quiz";
+    }
+    continueBtn.classList.remove('skjult');
+  }
+ 
 
   continueBtn.addEventListener('click', () => {
      resultContainer.classList.add('skjult');
@@ -211,11 +212,9 @@ function showQuestion() {
   }
 
   /*genstart hvis der ønskes at prøve igen*/ 
-  restartBtn.addEventListener('click',()=>{
+  restartBtn.addEventListener('click', () => {
     currentQuestionIndex = 0;
     score = 0;
-    startQuiz();
-    restartBtn.classList.add('skjult')
-    continueBtn.classList.remove('skjult');
-
-  });
+    startQuiz(); 
+    restartBtn.classList.add('skjult');
+});
