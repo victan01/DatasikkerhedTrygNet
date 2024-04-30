@@ -118,15 +118,57 @@ function showQuestion() {
     const question = questions[currentQuestionIndex];
     if (selectedIndex === question.correctAnswerIndex) {
         score += 25;
-        resultText.innerText = 'Korrekt!';
+        resultText.innerText = 'Korrekt! Godt klaret!';
         correctSound.play();
+        handleCorrectConsequence(selectedIndex);
     } else {
-        resultText.innerText = 'Forkert!';
+        resultText.innerText = 'Forkert! Prøv igen.';
         wrongSound.play();
+        handleIncorrectConsequence(selectedIndex);
     }
     showResult();
 
 }
+
+  function handleCorrectConsequence(selectedIndex) {
+    switch (currentQuestionIndex){
+      case 0:
+          resultText.innerText = 'Godt klaret, du er godt på vej!';
+          break;
+      case 1:
+          resultText.innerText = 'Fantastisk, du er godt kørende!';
+          break;
+      case 2:
+          resultText.innerText = 'Det er altid vigtigt at sikre en sik ker betaling. Godt klaret!';
+          break;
+      case 3:
+          resultText.innerText = 'Det er rigtigt! du har godt styr på det!';
+          break;
+    }
+  }
+
+  function handleIncorrectConsequence(selectedIndex) {
+    switch (currentQuestionIndex){
+      case 0:
+          resultText.innerText = 'FORKERT! du skal altid undersøge et nyt website.';
+          break;
+
+      case 1:
+          resultText.innerText = 'Beklager, du skal være mere forsigtig.';
+          break;
+
+      case 2:
+          resultText.innerText = 'Du må ALDRIG følge en anderledes betallingsmetode uden at sikkerhedstjekke den!';
+          break;
+
+      case 3:
+          resultText.innerText = 'Alle troværdige websites skal have kontaktinformationer!';
+          break;
+    }
+  }
+
+
+
 
  function showResult() {
   resultContainer.classList.remove('skjult')
