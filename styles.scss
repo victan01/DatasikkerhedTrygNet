@@ -284,7 +284,8 @@ h2{
 }
 
 .farve-ramme{
-    margin: 2%;
+    margin: 2% 15% 2% 15%;
+    padding: 20px;
     border: 10px solid $cta-button;
     border-radius: 7%;
 
@@ -350,7 +351,7 @@ h2{
    
 /*Responsivt design*/ 
 
-@media only screen and (max-width: 1098px) {
+@media only screen and (max-width: 1098px) and (min-width: 601px) {
 
     h1{
         font-size: $Heading-mobile-size;
@@ -411,9 +412,12 @@ h2{
         grid-template-columns: 1fr 1fr 1fr;
     }
     
+      /*Reponsivt for spil*/
+
     .farve-ramme{
+        padding: 20px;
         grid-column: 2;
-        margin: 2% 15% 2% 15%;
+        margin: 2% 10% 2% 10%;
         
      }
     .introduktion{
@@ -437,9 +441,51 @@ h2{
     }
  }
 
+   #valgmuligheds-box{
+
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 5%;
+    
+    button{
+    @include valgmulighedbutton
+  }
+
+ }
+
+
+@media only screen and (max-width: 768px){
+    .mainforspil{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    
+    .farve-ramme{
+        margin: 2% 20% 2% 20%;
+
+        .introduktion{
+           display: grid;
+           grid-template-columns: 1fr;
+        }
+         .introduktion h1{
+            margin: 2% 21% 2% 21%;
+        
+        }
+        .introduktion p{
+           margin: 2% 21% 2% 21%;
+        }
+        
+        .knap-placering{
+            grid-column: 1;
+        }
+   
+ }
+
+}
 
 
 @media only screen and (max-width: 500px){
+
 
     .forside-faktakasser{
         grid-template-columns: 1fr;
@@ -452,59 +498,14 @@ h2{
     
   }
 
-  /*Reponsivt for spil*/
- #valgmuligheds-box{
-
-    display: grid;
-    grid-template-columns: 1fr;
-    margin: 5%;
-    
-    button{
-    @include valgmulighedbutton
-  }
- } 
-
- 
+  .introduktion h1{
+    font-size: $Heading-mobile-size; 
 
 }
-
-
-@media only screen and (max-width: 768px){
-    .mainforspil{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-    
-    .farve-ramme{
-        .farve-ramme{
-            grid-column: 2;
-            margin: 2% 16% 2% 16%;
-            
-         }
-        .introduktion{
-           display: grid;
-           grid-template-columns: 1fr;
-        }
-         .introduktion h1{
-            grid-column: 1;
-            font-size: $Heading-mobile-size; 
-            margin: 2% 21% 2% 21%;
-        
-        }
-        .introduktion p{
-           font-size: $broedtekst-font-size;
-           grid-column: 1;
-           margin: 2% 21% 2% 21%;
-        }
-        
-        .knap-placering{
-            grid-column: 1;
-        }
-   
- }
-
+.introduktion p{
+   font-size: $broedtekst-font-size;
 }
-
+}
 
 
 
