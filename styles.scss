@@ -306,6 +306,7 @@ h2{
 }
 #spørgsmålsbox{
     @include game-baggrund   
+    
 }
 #valgmuligheds-box button{
     @include valgmulighedbutton
@@ -348,6 +349,78 @@ h2{
     }
 }
 
+
+/* Style af Quix er start*/
+.quiz-started{
+    .farve-ramme{
+        display: none;
+    }
+
+    #spørgsmålsbox{
+        display: grid;
+        grid-template-rows: auto auto 1fr auto;
+        margin: 20px;
+        padding: 20px;
+        border-radius: 10px;
+
+        padding-top: 300px; 
+        background-repeat: no-repeat; 
+        background-position: top center;
+        background-size: contain;
+        max-height: 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #spørgsmålsbox[data-question="1"] {
+        background-image: url('Img/Img4Game/Question1.png');    
+    }
+
+    #spørgsmålsbox[data-question="2"] {
+        background-image: url('Img/Img4Game/Question2.png');
+    }
+
+    #spørgsmålsbox[data-question="3"] {
+        background-image: url('Img/Img4Game/Question3.png');
+    }
+
+    #spørgsmålsbox[data-question="4"] {
+        background-image: url('Img/Img4Game/Question4.png');
+    }
+
+    #spørgsmålstekst{
+        align-self: start;
+        margin-bottom: 20px;
+        font-size: $broedtekst-font-size;
+        background-size: contain;
+
+    }
+
+    #valgmuligheds-box{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        background-size: contain;
+
+    }
+
+    .knap-placering{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    #fortsæt-knap, #tilbage-knap {
+        padding: 10px 20px;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+}
    
 /*Responsivt design*/ 
 
