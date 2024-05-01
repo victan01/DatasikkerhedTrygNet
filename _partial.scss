@@ -164,33 +164,49 @@ $button-font-size: 1.6rem;
     background-size: cover;
 
      @media only screen and (max-width: 500px){
-       max-width: 100%;
-       max-height: 100%;
+       width: 500px;
+       height: 300px;
        border-radius: 0;
 
      }
 } 
 
+@mixin gamefrontpagepicture{
+    align-self: center;
+    width: 1050px;
+    height: 600px;
+
+
+    @media only screen and (max-width: 500px){
+       width: 500px;
+       height: 300px;
+       grid-column: 1;
+       padding: 5%;
+      }
+}
 @mixin gamebutton{
     background: transparent;
     border: 2px solid $cta-button;
     color: $button-color;
-    padding: 10px 30px;
+    padding: 20px 25px;
     border-radius: 16px;
     cursor: pointer;
     transition: background-color 0.3s, color 0,3s;
     font-size: 2.0rem;     
     box-shadow: 0 0 10px $cta-buttonglow,0 0 20px $cta-buttonglow,0 0 30px $cta-buttonglow;   
 
+
     @media only screen and (max-width: 500px){
         font-size: 1.4rem;
-        padding: 10px 20px;
+        padding: 20px 25px;
+        grid: 2;
+
     }
 }
 
 @mixin hoverforgamebutton{
     cursor: pointer;
-    transform: scale(1.1);
+    transform: scale(1.0);
     box-shadow: 0 0 10px $cta-buttonglow-hover,0 0 20px $cta-buttonglow-hover,0 0 30px $cta-buttonglow-hover; 
 }
 

@@ -248,14 +248,18 @@ h2{
 
 
 .mainforspil{
-    margin: 10%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
     display: flex;
     justify-content: center;
     align-items: center;
+   
 }
 
 .Sikkerhedspil-box{
-    margin: 2%;
+    margin: 5% 5% 5% 5%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -271,24 +275,33 @@ h2{
     grid-template-columns: 1fr;
     justify-content: center;
     align-items: center;
-    background-image: url(Img/Img4Game/Anna.png);
     background-size: cover;
     background-blend-mode: overlay;
     text-align: left;
 }
 .introduktion img{
-    align-self: center;
-    width: 1050px;
-    height: 500px;
+   @include gamefrontpagepicture
 }
 
+.farve-ramme{
+    margin: 2%;
+    border: 10px solid $cta-button;
+    border-radius: 7%;
+
+}
 
 .start{
     text-align: center;
 }
 
+.knap-placering{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 #start-knap{
-  @include gamebutton      
+    grid-column: 2;
+    @include gamebutton      
 }
 #spørgsmålsbox{
     @include game-baggrund   
@@ -337,7 +350,7 @@ h2{
    
 /*Responsivt design*/ 
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1098px) {
 
     h1{
         font-size: $Heading-mobile-size;
@@ -393,9 +406,37 @@ h2{
         display: none;
     }
 
-  
-  
-}
+    .mainforspil{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    
+    .farve-ramme{
+        grid-column: 2;
+        margin: 2% 20% 2% 20%;
+        
+     }
+    .introduktion{
+       display: grid;
+       grid-template-columns: 1fr;
+    }
+     .introduktion h1{
+        grid-column: 1;
+        font-size: $Heading-mobile-size; 
+        margin: 2% 21% 2% 21%;
+    
+    }
+    .introduktion p{
+       font-size: $broedtekst-font-size;
+       grid-column: 1;
+       margin: 2% 21% 2% 21%;
+    }
+    
+    .knap-placering{
+        grid-column: 1;
+    }
+ }
+
 
 
 @media only screen and (max-width: 500px){
@@ -411,8 +452,6 @@ h2{
     
   }
 
-
-
   /*Reponsivt for spil*/
  #valgmuligheds-box{
 
@@ -422,10 +461,63 @@ h2{
     
     button{
     @include valgmulighedbutton
-   }
   }
+ } 
 
-} 
+ 
+
+}
+
+
+@media only screen and (max-width: 768px){
+    .mainforspil{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    
+    .farve-ramme{
+        .farve-ramme{
+            grid-column: 2;
+            margin: 2% 16% 2% 16%;
+            
+         }
+        .introduktion{
+           display: grid;
+           grid-template-columns: 1fr;
+        }
+         .introduktion h1{
+            grid-column: 1;
+            font-size: $Heading-mobile-size; 
+            margin: 2% 21% 2% 21%;
+        
+        }
+        .introduktion p{
+           font-size: $broedtekst-font-size;
+           grid-column: 1;
+           margin: 2% 21% 2% 21%;
+        }
+        
+        .knap-placering{
+            grid-column: 1;
+        }
+   
+ }
+
+}
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
 
    
 

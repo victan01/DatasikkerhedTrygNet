@@ -291,14 +291,17 @@ h2 {
 
 /*Sikkerhedspillet starter her*/
 .mainforspil {
-  margin: 10%;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .Sikkerhedspil-box {
-  margin: 2%;
+  margin: 5% 5% 5% 5%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -313,7 +316,6 @@ h2 {
   grid-template-columns: 1fr;
   justify-content: center;
   align-items: center;
-  background-image: url(Img/Img4Game/Anna.png);
   background-size: cover;
   background-blend-mode: overlay;
   text-align: left;
@@ -322,18 +324,39 @@ h2 {
 .introduktion img {
   align-self: center;
   width: 1050px;
-  height: 500px;
+  height: 600px;
+}
+@media only screen and (max-width: 500px) {
+  .introduktion img {
+    width: 500px;
+    height: 300px;
+    grid-column: 1;
+    padding: 5%;
+  }
+}
+
+.farve-ramme {
+  margin: 2%;
+  border: 10px solid #00A3FF;
+  border-radius: 7%;
 }
 
 .start {
   text-align: center;
 }
 
+.knap-placering {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 #start-knap {
+  grid-column: 2;
   background: transparent;
   border: 2px solid #00A3FF;
   color: #F5FFFE;
-  padding: 10px 30px;
+  padding: 20px 25px;
   border-radius: 16px;
   cursor: pointer;
   transition: background-color 0.3s, color 0, 3s;
@@ -343,7 +366,8 @@ h2 {
 @media only screen and (max-width: 500px) {
   #start-knap {
     font-size: 1.4rem;
-    padding: 10px 20px;
+    padding: 20px 25px;
+    grid: 2;
   }
 }
 
@@ -360,8 +384,8 @@ h2 {
 }
 @media only screen and (max-width: 500px) {
   #spørgsmålsbox {
-    max-width: 100%;
-    max-height: 100%;
+    width: 500px;
+    height: 300px;
     border-radius: 0;
   }
 }
@@ -405,7 +429,7 @@ h2 {
 
 #start-knap:hover {
   cursor: pointer;
-  transform: scale(1.1);
+  transform: scale(1);
   box-shadow: 0 0 10px rgba(239, 0, 0, 0.882), 0 0 20px rgba(239, 0, 0, 0.882), 0 0 30px rgba(239, 0, 0, 0.882);
 }
 
@@ -437,7 +461,7 @@ h2 {
 }
 #svar-box button:hover {
   cursor: pointer;
-  transform: scale(1.1);
+  transform: scale(1);
   box-shadow: 0 0 10px rgba(239, 0, 0, 0.882), 0 0 20px rgba(239, 0, 0, 0.882), 0 0 30px rgba(239, 0, 0, 0.882);
 }
 
@@ -464,12 +488,12 @@ h2 {
 }
 #slut button:hover {
   cursor: pointer;
-  transform: scale(1.1);
+  transform: scale(1);
   box-shadow: 0 0 10px rgba(239, 0, 0, 0.882), 0 0 20px rgba(239, 0, 0, 0.882), 0 0 30px rgba(239, 0, 0, 0.882);
 }
 
 /*Responsivt design*/
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1098px) {
   h1 {
     font-size: 2.625rem;
   }
@@ -508,6 +532,31 @@ h2 {
   .navsection {
     display: none;
   }
+  .mainforspil {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .farve-ramme {
+    grid-column: 2;
+    margin: 2% 20% 2% 20%;
+  }
+  .introduktion {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .introduktion h1 {
+    grid-column: 1;
+    font-size: 2.625rem;
+    margin: 2% 21% 2% 21%;
+  }
+  .introduktion p {
+    font-size: 1.6rem;
+    grid-column: 1;
+    margin: 2% 21% 2% 21%;
+  }
+  .knap-placering {
+    grid-column: 1;
+  }
 }
 @media only screen and (max-width: 500px) {
   .forside-faktakasser {
@@ -541,5 +590,32 @@ h2 {
     font-size: 1.2rem;
     padding: 10%;
     margin: 3%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .mainforspil {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .farve-ramme .farve-ramme {
+    grid-column: 2;
+    margin: 2% 16% 2% 16%;
+  }
+  .farve-ramme .introduktion {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .farve-ramme .introduktion h1 {
+    grid-column: 1;
+    font-size: 2.625rem;
+    margin: 2% 21% 2% 21%;
+  }
+  .farve-ramme .introduktion p {
+    font-size: 1.6rem;
+    grid-column: 1;
+    margin: 2% 21% 2% 21%;
+  }
+  .farve-ramme .knap-placering {
+    grid-column: 1;
   }
 }/*# sourceMappingURL=styles.css.map */

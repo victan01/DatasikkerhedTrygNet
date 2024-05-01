@@ -68,7 +68,7 @@ let score = 0;
   },
   {
     question: 'Anna støder på en online butik med profesionelt design og meget positive anmeldelser',
-    options: ['Stole på butikkens troværdighed og foretage købet med det samme','Undersøge ydligere for at sikre at butikken er troværdig' ]
+    options: ['Stole på butikkens troværdighed og foretage købet med det samme','Undersøge ydligere i anmeldelser for at sikre at butikken er troværdig' ]
     ,correctAnswerIndex : 1
   },
 
@@ -107,6 +107,25 @@ function showQuestion() {
   const question = questions[currentQuestionIndex];
   questionText.innerText = question.question;
   optionContainer.innerHTML = '';
+
+  switch (currentQuestionIndex) {
+   case 0:
+      questionContainer.style.backgroundImage = "url('Img/Img4Game/Question 1.png')";
+      break;
+   case 1:
+      questionContainer.style.backgroundImage = "url('Img/Img4Game/Question 2.png')";
+      break;
+   case 2:
+        questionContainer.style.backgroundImage = "url('Img/Img4Game/Question 3.png')";
+        break;
+   case 2:
+        questionContainer.style.backgroundImage = "url('Img/Img4Game/Question 4.png')";
+        break;
+
+  }
+  
+  
+
   question.options.forEach((option, index) => {
     const button = document.createElement('button');
     button.innerText = option;
