@@ -46,6 +46,7 @@ const optionBtn = document.getElementById('valgmulighedsknap')
 const resultContainer = document.getElementById('svar-box')
 const resultText = document.getElementById('svartekst')
 const continueBtn = document.getElementById('fortsæt-knap')
+const returnBtn = document.getElementById('tilbage-knap')
 const slut = document.getElementById('slut')
 const finalScore = document.getElementById('point-tælling')
 const restartBtn = document.getElementById('try-knap')
@@ -100,6 +101,7 @@ let score = 0;
 /* Spørgsmål og valgmuligheder tilføjes*/
 function showQuestion() {
   continueBtn.classList.remove('skjult')
+  returnBtn.classList.remove('skjult');
   const intro = document.getElementById('introduktion');
   intro.classList.add('skjult');
   const question = questions[currentQuestionIndex];
@@ -112,6 +114,8 @@ function showQuestion() {
     button.addEventListener('click', () => selectAnswer(index));
     optionContainer.appendChild(button);
   });
+
+
 }
 
 /* Valg af svagmulighedsdel + resultat*/ 
@@ -181,6 +185,9 @@ function showQuestion() {
     continueBtn.classList.remove('skjult');
   }
  
+  returnBtn.addEventListener('click', () => {
+    window.location.href = "sikkerhedspil.html";
+});
 
   continueBtn.addEventListener('click', () => {
      resultContainer.classList.add('skjult');
@@ -197,6 +204,7 @@ function showQuestion() {
 
     function endQuiz(){
     questionContainer.classList.add('skjult');
+    returnBtn.classList.add('skjult')
     slut.classList.remove('skjult');
     continueBtn.classList.add('skjult');
     restartBtn.classList.remove('skjult')
@@ -211,7 +219,6 @@ function showQuestion() {
       }
   }
 
-  /*genstart hvis der ønskes at prøve igen*/ 
   restartBtn.addEventListener('click', () => {
     currentQuestionIndex = 0;
     score = 0;

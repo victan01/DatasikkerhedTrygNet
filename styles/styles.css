@@ -321,6 +321,8 @@ h2 {
 
 .introduktion img {
   align-self: center;
+  width: 1050px;
+  height: 500px;
 }
 
 .start {
@@ -378,6 +380,24 @@ h2 {
 @media only screen and (max-width: 500px) {
   #valgmuligheds-box button {
     font-size: 1.2rem;
+    padding: 10%;
+    margin: 3%;
+  }
+}
+
+#tilbage-knap {
+  background: black;
+  color: #F5FFFE;
+  padding: 10px 30px;
+  border-radius: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0, 3s;
+  font-size: 1.4rem;
+  box-shadow: 0 0 10px rgba(0, 216, 236, 0.882), 0 0 20px rgba(0, 216, 236, 0.882), 0 0 30px rgba(0, 216, 236, 0.882);
+}
+@media only screen and (max-width: 500px) {
+  #tilbage-knap {
+    font-size: 1.1rem;
     padding: 10%;
     margin: 3%;
   }

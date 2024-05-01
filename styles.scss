@@ -278,6 +278,8 @@ h2{
 }
 .introduktion img{
     align-self: center;
+    width: 1050px;
+    height: 500px;
 }
 
 
@@ -293,6 +295,10 @@ h2{
 }
 #valgmuligheds-box button{
     @include valgmulighedbutton
+}
+
+#tilbage-knap{
+    @include fortsæt-knap
 }
 #start-knap:hover{
    @include hoverforgamebutton
