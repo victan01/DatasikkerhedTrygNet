@@ -113,25 +113,25 @@ function showQuestion() {
       questionContainer.style.backgroundImage = "url('Img/Img4Game/Question 1.png')";
       questionContainer.style.backgroundSize = "70%";
       questionContainer.style.backgroundRepeat = "no-repeat"; 
-      questionContainer.style.backgroundPosition = "left top";
+      questionContainer.style.backgroundPosition = "top center";
       break;
    case 1:
       questionContainer.style.backgroundImage = "url('Img/Img4Game/Question 2.png')";
       questionContainer.style.backgroundSize = "70%";
       questionContainer.style.backgroundRepeat = "no-repeat"; 
-      questionContainer.style.backgroundPosition = "left top";
+      questionContainer.style.backgroundPosition = "top center";
       break;
    case 2:
         questionContainer.style.backgroundImage = "url('Img/Img4Game/Question 3.png')";
         questionContainer.style.backgroundSize = "70%";
         questionContainer.style.backgroundRepeat = "no-repeat"; 
-        questionContainer.style.backgroundPosition = "left top";
+        questionContainer.style.backgroundPosition = "top center";
         break;
    case 2:
         questionContainer.style.backgroundImage = "url('Img/Img4Game/Question 4.png')";
         questionContainer.style.backgroundSize = "70%";
         questionContainer.style.backgroundRepeat = "no-repeat"; 
-        questionContainer.style.backgroundPosition = "left top";
+        questionContainer.style.backgroundPosition = "top center";
         break;
   }
 

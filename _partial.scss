@@ -212,6 +212,7 @@ $button-font-size: 1.6rem;
 
 
 @mixin valgmulighedbutton{
+    width: 600px;
     background: transparent;
     border: 2px solid $cta-button;
     color: $button-color;
