@@ -72,7 +72,7 @@ let score = 0;
   },
 
   {
-    question: 'Anna opdager den online butik hun er inde på kræver en anderledes betallingsmetode som gavekort og bankoverførsel istedet for kreditkort og paypal ',
+    question: 'Anna opdager den online butik hun er inde på kræver en anderledes betallingsmetode som gavekort og bankoverførsel istedet for kreditkort og paypal',
     options: ['Stoppe købet og undersøge yderligere for at undgå svindel','Følge den nye betallingsmetode for at undgå svindel' ]
     ,correctAnswerIndex : 0
   },
@@ -83,6 +83,8 @@ let score = 0;
     ,correctAnswerIndex : 1
   } 
 ]
+
+
 
 /* Event og elementer, som skal skjules tilføjes + Spillet startes*/
  startBtn.addEventListener('click', startQuiz);
@@ -111,25 +113,25 @@ function showQuestion() {
   switch (currentQuestionIndex) {
    case 0:
       questionContainer.style.backgroundImage = "url('Img/Img4Game/Question 1.png')";
-      questionContainer.style.backgroundSize = "70%";
+      questionContainer.style.backgroundSize = "60%";
       questionContainer.style.backgroundRepeat = "no-repeat"; 
       questionContainer.style.backgroundPosition = "top center";
       break;
    case 1:
       questionContainer.style.backgroundImage = "url('Img/Img4Game/Question 2.png')";
-      questionContainer.style.backgroundSize = "70%";
+      questionContainer.style.backgroundSize = "60%";
       questionContainer.style.backgroundRepeat = "no-repeat"; 
       questionContainer.style.backgroundPosition = "top center";
       break;
    case 2:
         questionContainer.style.backgroundImage = "url('Img/Img4Game/Question 3.png')";
-        questionContainer.style.backgroundSize = "70%";
+        questionContainer.style.backgroundSize = "50%";
         questionContainer.style.backgroundRepeat = "no-repeat"; 
         questionContainer.style.backgroundPosition = "top center";
         break;
    case 2:
         questionContainer.style.backgroundImage = "url('Img/Img4Game/Question 4.png')";
-        questionContainer.style.backgroundSize = "70%";
+        questionContainer.style.backgroundSize = "60%";
         questionContainer.style.backgroundRepeat = "no-repeat"; 
         questionContainer.style.backgroundPosition = "top center";
         break;
@@ -174,7 +176,7 @@ function showQuestion() {
           resultText.innerText = 'Fantastisk, du er godt kørende!';
           break;
       case 2:
-          resultText.innerText = 'Det er altid vigtigt at sikre en sik ker betaling. Godt klaret!';
+          resultText.innerText = 'Det er altid vigtigt at sikre en sikker betaling. Godt klaret!';
           break;
       case 3:
           resultText.innerText = 'Det er rigtigt! du har godt styr på det!';
@@ -231,27 +233,43 @@ function showQuestion() {
 });
 
   /* afslutning af quiz*/ 
+  function endQuiz(){ 
+  console.log
+  questionContainer.style.display = 'none';
+    returnBtn.style.display = 'none';
+  questionContainer.classList.add('skjult');
+  returnBtn.classList.add('skjult');
+  slut.classList.remove('skjult');
+  continueBtn.classList.add('skjult');
+  restartBtn.classList.remove('skjult');
+  resultText.innerText = score === questions.length * 25 ? 'Tillykke du har vundet! og er godt sikret i at handle online.' : 'Desværre du har tabt! og er ikke 100% sikret i at handle online.';
+  resultText.classList.remove('skjult');
+  resultText.style.position = 'relative'; 
+  resultText.style.margin = '20%'; 
+  resultText.style.width = '140%'; 
+  resultText.style.top = '10px'; 
+  resultText.style.left = '20%';
+  finalScore.innerText = 'Endelige score: ' + score;
+  finalScore.classList.remove('skjult');
+  finalScore.style.position = 'absolute';  
+  finalScore.style.left = '465px';  
+  finalScore.style.bottom = '350px';  
 
-    function endQuiz(){
-    questionContainer.classList.add('skjult');
-    returnBtn.classList.add('skjult')
-    slut.classList.remove('skjult');
-    continueBtn.classList.add('skjult');
-    restartBtn.classList.remove('skjult')
-    finalScore.innerText = 'Endelige score: ' + score;
+
+
+
       if(score === questions.length * 25) {
       resultText.innerText = 'Tillykke du har vundet! og er godt sikret i at handle online.';
       winSound.play();
+      resultText.classList.remove('skjult');
      }
       else{
         resultText.innerText = 'Desværre du har tabt! og er ikke 100% sikret i at handle online.';
         loseSound.play();
+        resultText.classList.remove('skjult');
       }
   }
 
   restartBtn.addEventListener('click', () => {
-    currentQuestionIndex = 0;
-    score = 0;
-    startQuiz(); 
-    restartBtn.classList.add('skjult');
+    window.location.href = "sikkerhedspil.html";
 });

@@ -364,7 +364,7 @@ h2{
 
     #spørgsmålstekst{
         grid-column: 1;
-        margin-top: 260px;
+        margin-top: 230px;
         margin-left: 5%;
         font-size: $broedtekst-font-size;
 
@@ -373,16 +373,18 @@ h2{
     #valgmuligheds-box{
         grid-row: 2;
         gap: 20px;
-        margin-bottom: 15%;
+        margin-bottom: 20%;
+
+        button:hover{
+         @include hoverforgamebutton
+        }
+        
     }
 
     .valgmulighedsknap{
-        width: 100%;
+        width: 110%;
     }
 
-    .valgmulighedsknap:hover{
-        @include hoverforgamebutton
-    }
 
     #tilbage-knap{
         position: absolute;
@@ -390,6 +392,11 @@ h2{
         left: 25%;
         transform: translateX(-50%);
         padding: 5%;
+
+        button:hover{
+            @include hoverforgamebutton
+
+        }
         
 
     }
@@ -400,6 +407,11 @@ h2{
         right: 25%;
         transform: translateX(50%);
         padding: 5%;
+
+        button:hover{
+            @include hoverforgamebutton
+
+        }
 
     }
 
@@ -437,6 +449,8 @@ h2{
         max-width: 50px;
         color: greenyellow;
     }
+
+    
 }
    
 /*Responsivt design*/ 
