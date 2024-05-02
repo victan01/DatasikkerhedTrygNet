@@ -63,28 +63,24 @@ let score = 0;
   {
     question: 'Anna er på udgik efter sin drømme computer og finder en butik, som sælger den til en meget lav pris'
     ,options: ['Klikke på "Køb nu" og købe den med det samme','Undersøge butikken nærmere for at sikre sig, at den er troværdig' ],
-    correctAnswerIndex : 1,
-    imageUrl:'IMG/Img4Game/Question 1.png'
+    correctAnswerIndex : 1
   },
   {
     question: 'Anna støder på en online butik med profesionelt design og meget positive anmeldelser',
     options: ['Stole på butikkens troværdighed og foretage købet med det samme','Undersøge ydligere i anmeldelser for at sikre at butikken er troværdig' ]
-    ,correctAnswerIndex : 1,
-    imageUrl:'IMG/Img4Game/Question 2.png'
+    ,correctAnswerIndex : 1
   },
 
   {
     question: 'Anna opdager den online butik hun er inde på kræver en anderledes betallingsmetode som gavekort og bankoverførsel istedet for kreditkort og paypal ',
     options: ['Stoppe købet og undersøge yderligere for at undgå svindel','Følge den nye betallingsmetode for at undgå svindel' ]
-    ,correctAnswerIndex : 0,
-    imageUrl:'IMG/Img4Game/Question 3.png'
+    ,correctAnswerIndex : 0
   },
 
   {
     question: 'Anna skal købe en kjole og hun opdager online butikken ikke har nogle kontaktinformationer ',
     options: ['En butik behøver ikke kontaktinformation, så hun køber bare kjolen', 'Undersøger websitet og tjekker eventuelle anmeldelser for at sikre butikken er troværdig']
-    ,correctAnswerIndex : 1,
-    imageUrl:'IMG/Img4Game/Question 4.png'
+    ,correctAnswerIndex : 1
   } 
 ]
 
@@ -115,28 +111,30 @@ function showQuestion() {
   switch (currentQuestionIndex) {
    case 0:
       questionContainer.style.backgroundImage = "url('Img/Img4Game/Question 1.png')";
+      questionContainer.style.backgroundSize = "70%";
+      questionContainer.style.backgroundRepeat = "no-repeat"; 
+      questionContainer.style.backgroundPosition = "left top";
       break;
    case 1:
       questionContainer.style.backgroundImage = "url('Img/Img4Game/Question 2.png')";
+      questionContainer.style.backgroundSize = "70%";
+      questionContainer.style.backgroundRepeat = "no-repeat"; 
+      questionContainer.style.backgroundPosition = "left top";
       break;
    case 2:
         questionContainer.style.backgroundImage = "url('Img/Img4Game/Question 3.png')";
+        questionContainer.style.backgroundSize = "70%";
+        questionContainer.style.backgroundRepeat = "no-repeat"; 
+        questionContainer.style.backgroundPosition = "left top";
         break;
    case 2:
         questionContainer.style.backgroundImage = "url('Img/Img4Game/Question 4.png')";
+        questionContainer.style.backgroundSize = "70%";
+        questionContainer.style.backgroundRepeat = "no-repeat"; 
+        questionContainer.style.backgroundPosition = "left top";
         break;
   }
 
-  updateImagePosition(question.imageUrl);
-  question.options.forEach((option, index) => {
-    const button = document.createElement('button');
-    button.innerText = option;
-    button.classList.add('valgmulighedsknap');
-    button.addEventListener('click', () => selectAnswer(index));
-    optionContainer.appendChild(button);
-  });
-}
-  
   
 
   question.options.forEach((option, index) => {
@@ -146,6 +144,8 @@ function showQuestion() {
     button.addEventListener('click', () => selectAnswer(index));
     optionContainer.appendChild(button);
   });
+
+}
 
 
 /* Valg af svagmulighedsdel + resultat*/ 
