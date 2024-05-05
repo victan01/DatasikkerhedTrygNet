@@ -608,6 +608,7 @@ h2 {
   }
   .quiz-started #spørgsmålstekst {
     margin-top: 40%;
+    margin-bottom: 20%;
     font-size: 1.4rem;
   }
   .quiz-started #valgmuligheds-box {
@@ -633,9 +634,6 @@ h2 {
     align-items: center;
     margin: 10%;
     bottom: -15%;
-  }
-  .quiz-started #svar-box #finalscore-container {
-    margin-top: 30%;
   }
 }
 
