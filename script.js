@@ -72,13 +72,13 @@ let score = 0;
   },
 
   {
-    question: 'Anna opdager den online butik hun er inde på kræver en anderledes betalingsmetode som gavekort og bankoverførsel istedet for kreditkort og paypal',
+    question: 'Anna er inde på et website, som kræver betalling via gavekort og bankoverførsel istedet for kreditkort og paypal',
     options: ['Stoppe købet og undersøge yderligere for at undgå svindel','Følge den nye betallingsmetode for at undgå svindel' ]
     ,correctAnswerIndex : 0
   },
 
   {
-    question: 'Anna skal købe en kjole og hun opdager online butikken ikke har nogle kontaktinformationer ',
+    question: 'Anna skal købe en kjole og hun opdager online butikken ikke har nogle kontaktinformationer, eller kundeservicechat',
     options: ['En butik behøver ikke kontakt information, så hun køber bare kjolen', 'Undersøger websitet og tjekker eventuelle anmeldelser for at sikre butikken er troværdig']
     ,correctAnswerIndex : 1
   } 

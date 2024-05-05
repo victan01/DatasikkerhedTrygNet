@@ -347,8 +347,24 @@ h2{
 }
 
 
-/* Style af Quix er start*/
+/* Style af Quix er start + responsivt af den del*/
 .quiz-started{
+
+    #introduktion{
+        display: none;
+    }
+    .introduktion{
+        display: none;
+    }
+
+    .knap-placering{
+        display: none;
+    }
+    .Sikkerhedspil-box{
+        width: 50%;
+        margin: 0 10%;
+
+    }
 
     #spørgsmålsbox{
         display: grid;
@@ -446,11 +462,86 @@ h2{
         max-width: 50px;
         color: greenyellow;
     }
+      
 
+
+    @media only screen and (max-width: 768px){
+        .mainforspil{
+          max-width: 100%;
+          margin: 0 auto;
+          padding: 20px;
+          box-sizing: border-box;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+        }
+
+        .Sikkerhedspil-box{
+           display: grid;
+           grid-template-columns: 1fr;
+
+        }
+
+        #spørgsmålsbox{
+            grid-template-columns: 1fr;
+            text-align: center;
+
+        }
+
+        #spørgsmålstekst{
+            margin-top: 40%;
+            font-size: 1.4rem;
+
+        }
+
+        #valgmuligheds-box{
+            margin-top: 65%;
+            margin-bottom: 10%;
+        }
+
+        #svar-box{
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            bottom: -75%;
+        
+        #svartekst{
+            bottom: 15%;
+
+        }
+
+        #tilbage-knap{
+            display: none;
+
+        }
     
+
+        #fortsæt-knap{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 10%;
+            bottom: -15%;
+        }
+
+        #finalscore-container{
+            margin-top: 30%;
+        }
+    
+
+   }
+    
+ 
 }
+
+}
+
+/* Style af Quix  start slutter*/
+
    
-/*Responsivt design*/ 
+/*Responsivt design at alt*/ 
 
 @media only screen and (max-width: 1098px) and (min-width: 601px) {
 
@@ -560,7 +651,7 @@ h2{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
     }
-    
+
     .farve-ramme{
         margin: 2% 20% 2% 20%;
 
@@ -585,41 +676,25 @@ h2{
 }
 
 
-@media only screen and (max-width: 500px){
-
-
+@media only screen and (max-width: 500px) {
     .forside-faktakasser{
-        grid-template-columns: 1fr;
-        margin-bottom: 50%;
+     grid-template-columns: 1fr;
+     margin-bottom: 50%;
     }
 
-    .datasikkerhed-tekst{
-        display: grid;
-        grid-template-columns: 1fr;
+ .datasikkerhed-tekst{
+    display: grid;
+    grid-template-columns: 1fr;
     
   }
 
   .introduktion h1{
     font-size: $Heading-mobile-size; 
 
-}
-.introduktion p{
+  }  
+ .introduktion p{
    font-size: $broedtekst-font-size;
+  } 
+
 }
-}
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-   
 

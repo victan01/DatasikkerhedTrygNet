@@ -407,8 +407,9 @@ h2 {
 @media only screen and (max-width: 500px) {
   #valgmuligheds-box button {
     font-size: 1.2rem;
-    padding: 10%;
-    margin: 3%;
+    padding: 12px;
+    width: 230px;
+    margin: 1%;
   }
 }
 
@@ -426,6 +427,7 @@ h2 {
   #tilbage-knap {
     font-size: 1.1rem;
     padding: 10%;
+    width: 220px;
     margin: 3%;
   }
 }
@@ -459,6 +461,7 @@ h2 {
   #svar-box button {
     font-size: 1.1rem;
     padding: 10%;
+    width: 220px;
     margin: 3%;
   }
 }
@@ -490,7 +493,20 @@ h2 {
   box-shadow: 0 0 10px rgba(239, 0, 0, 0.882), 0 0 20px rgba(239, 0, 0, 0.882), 0 0 30px rgba(239, 0, 0, 0.882);
 }
 
-/* Style af Quix er start*/
+/* Style af Quix er start + responsivt af den del*/
+.quiz-started #introduktion {
+  display: none;
+}
+.quiz-started .introduktion {
+  display: none;
+}
+.quiz-started .knap-placering {
+  display: none;
+}
+.quiz-started .Sikkerhedspil-box {
+  width: 50%;
+  margin: 0 10%;
+}
 .quiz-started #spørgsmålsbox {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -572,8 +588,59 @@ h2 {
   max-width: 50px;
   color: greenyellow;
 }
+@media only screen and (max-width: 768px) {
+  .quiz-started .mainforspil {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .quiz-started .Sikkerhedspil-box {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .quiz-started #spørgsmålsbox {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .quiz-started #spørgsmålstekst {
+    margin-top: 40%;
+    font-size: 1.4rem;
+  }
+  .quiz-started #valgmuligheds-box {
+    margin-top: 65%;
+    margin-bottom: 10%;
+  }
+  .quiz-started #svar-box {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: -75%;
+  }
+  .quiz-started #svar-box #svartekst {
+    bottom: 15%;
+  }
+  .quiz-started #svar-box #tilbage-knap {
+    display: none;
+  }
+  .quiz-started #svar-box #fortsæt-knap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10%;
+    bottom: -15%;
+  }
+  .quiz-started #svar-box #finalscore-container {
+    margin-top: 30%;
+  }
+}
 
-/*Responsivt design*/
+/* Style af Quix  start slutter*/
+/*Responsivt design at alt*/
 @media only screen and (max-width: 1098px) and (min-width: 601px) {
   h1 {
     font-size: 2.625rem;
@@ -661,8 +728,9 @@ h2 {
 @media only screen and (max-width: 500px) {
   #valgmuligheds-box button {
     font-size: 1.2rem;
-    padding: 10%;
-    margin: 3%;
+    padding: 12px;
+    width: 230px;
+    margin: 1%;
   }
 }
 
