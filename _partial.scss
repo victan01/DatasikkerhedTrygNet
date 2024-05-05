@@ -232,8 +232,8 @@ $button-font-size: 1.6rem;
 }
 
 @mixin fortsæt-knap{
-    background: black;
-    color: $button-color;
+    background: white;
+    color: #090A0B;
     padding: 10px 30px;
     border-radius: 16px;
     cursor: pointer;
@@ -246,7 +246,6 @@ $button-font-size: 1.6rem;
         padding: 10%;
         margin: 3%;
     }
-
 }
 
 
