@@ -72,8 +72,8 @@ let score = 0;
   },
 
   {
-    question: 'Anna er inde på et website, som kræver betalling via gavekort og bankoverførsel istedet for kreditkort og paypal',
-    options: ['Stoppe købet og undersøge yderligere for at undgå svindel','Følge den nye betallingsmetode for at undgå svindel' ]
+    question: 'Anna er inde på et website, som kræver betalling via gavekort og bankoverførsel uden kreditkort',
+    options: ['Stoppe købet og undersøge yderligere for at undgå svindel','Følge den nye betalingsmetode for at undgå svindel' ]
     ,correctAnswerIndex : 0
   },
 
