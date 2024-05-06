@@ -159,6 +159,7 @@ h2 {
   transition: background-color 0.3s, color 0, 3s;
   font-size: 1.6rem;
   margin-left: 1%;
+  box-shadow: 0 2px 4px rgba(255, 255, 255, 0.4), 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 @media only screen and (max-width: 768px) {
   .borderbutton {
@@ -180,6 +181,7 @@ h2 {
   transition: background-color 0.3s, color 0, 3s;
   font-size: 1.6rem;
   margin-bottom: 3%;
+  box-shadow: 0 2px 4px rgba(255, 255, 255, 0.4), 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 @media only screen and (max-width: 768px) {
   .bluebutton {
@@ -212,6 +214,7 @@ h2 {
   flex-direction: row;
   font-size: 1.6rem;
   margin: 20px;
+  box-shadow: 0 2px 4px rgba(255, 255, 255, 0.4), 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
 .faktaikon img {
@@ -282,6 +285,7 @@ h2 {
   margin-left: 20%;
   background-color: #00A3FF;
   transform: rotate(-90deg);
+  box-shadow: 0 2px 4px rgba(255, 255, 255, 0.4), 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 @media only screen and (max-width: 500px) {
   .halvmåne {
@@ -341,6 +345,7 @@ h2 {
   padding: 20px;
   border: 10px solid #00A3FF;
   border-radius: 7%;
+  box-shadow: 0 2px 4px rgba(255, 255, 255, 0.4), 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
 .start {
@@ -421,6 +426,7 @@ h2 {
   cursor: pointer;
   transition: background-color 0.3s, color 0, 3s;
   font-size: 1.4rem;
+  box-shadow: 0 2px 4px rgba(255, 255, 255, 0.4), 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 @media only screen and (max-width: 500px) {
   #tilbage-knap {
@@ -454,6 +460,7 @@ h2 {
   cursor: pointer;
   transition: background-color 0.3s, color 0, 3s;
   font-size: 1.4rem;
+  box-shadow: 0 2px 4px rgba(255, 255, 255, 0.4), 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 @media only screen and (max-width: 500px) {
   #svar-box button {
@@ -476,6 +483,7 @@ h2 {
   cursor: pointer;
   transition: background-color 0.3s, color 0, 3s;
   font-size: 2rem;
+  box-shadow: 0 2px 4px rgba(255, 255, 255, 0.4), 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 @media only screen and (max-width: 500px) {
   #slut button {

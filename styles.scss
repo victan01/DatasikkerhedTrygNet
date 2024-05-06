@@ -138,6 +138,7 @@ h2{
     padding: 12%;
     margin-top: 5%;
 
+
 }
 
 .forside-tekst h1, .forside-tekst h2{
@@ -147,14 +148,19 @@ h2{
 .borderbutton{
     @include border-btn;
     margin-left: 1%;
+    box-shadow: $box-shadow2;
+
 }
 
 .borderbutton:hover{
     @include borderbutton-hover
+    
 }
 
 .bluebutton{
     @include blue-btn;  
+    box-shadow: $box-shadow2;
+
 }
 
 .bluebutton:hover{
@@ -172,6 +178,7 @@ h2{
 
 .faktakasse{
     @include fakta-box;
+    box-shadow: $box-shadow2;
 
 }
 
@@ -289,6 +296,7 @@ h2{
     padding: 20px;
     border: 10px solid $cta-button;
     border-radius: 7%;
+    box-shadow: $box-shadow;
 
 }
 
@@ -303,7 +311,8 @@ h2{
 }
 #start-knap{
     grid-column: 2;
-    @include gamebutton      
+    @include gamebutton  
+        
 }
 #spørgsmålsbox{
     @include game-baggrund   

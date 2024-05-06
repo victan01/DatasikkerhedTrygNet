@@ -18,6 +18,10 @@ $broedtekst-font-size: 1.6rem;
 $hover-font-size: 1,4rem;
 $faktakasse-font-size: 1.1rem;
 $button-font-size: 1.6rem;
+$box-shadow:0 2px 4px rgba(255, 255, 255, 0.4), 
+0 8px 16px rgba(0, 0, 0, 0.3); 
+$box-shadow2: 0 3px 6px rgba(255, 255, 255, 0.5), 
+        0 12px 24px rgba(0, 0, 0, 0.4); 
 
 
 
@@ -61,6 +65,7 @@ $button-font-size: 1.6rem;
     cursor: pointer;
     transition: background-color 0.3s, color 0,3s;
     font-size: 1.125rem; 
+    box-shadow: $box-shadow2;
 
 }
 @mixin border-btn {
@@ -143,6 +148,7 @@ $button-font-size: 1.6rem;
     margin-left: 20%;
     background-color: $cta-button;
     transform: rotate(-90deg);
+    box-shadow: $box-shadow;
 
     @media only screen and (max-width: 500px){
        display: none;
@@ -239,7 +245,8 @@ $button-font-size: 1.6rem;
     border-radius: 16px;
     cursor: pointer;
     transition: background-color 0.3s, color 0,3s;
-    font-size: 1.4rem;     
+    font-size: 1.4rem;   
+    box-shadow: $box-shadow;
 
     @media only screen and (max-width: 500px){
         font-size: 1.1rem;
@@ -258,7 +265,7 @@ $button-font-size: 1.6rem;
     cursor: pointer;
     transition: background-color 0.3s, color 0,3s;
     font-size: 2.0rem;     
-  
+    box-shadow: $box-shadow;
 
     @media only screen and (max-width: 500px){
         font-size: 1.4rem;
