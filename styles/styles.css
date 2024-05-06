@@ -651,10 +651,9 @@ h2 {
   }
   .quiz-started .Sikkerhedspil-box {
     display: grid;
-    grid-column: 1fr;
+    grid-template-columns: 1fr;
   }
   .quiz-started #spørgsmålsbox {
-    grid-column: 1fr;
     text-align: center;
   }
   .quiz-started #spørgsmålstekst {
@@ -665,6 +664,12 @@ h2 {
   .quiz-started #valgmuligheds-box {
     grid-column: 1;
     margin-top: 15%;
+  }
+  .quiz-started #tilbage-knap {
+    margin-top: 40%;
+  }
+  .quiz-started #fortsæt-knap {
+    margin-top: 40%;
   }
   h1 {
     font-size: 2.625rem;

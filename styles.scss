@@ -552,14 +552,11 @@ h2{
   
           .Sikkerhedspil-box{
              display: grid;
-             grid-column: 1fr;
-  
+             grid-template-columns: 1fr;
           }
   
           #spørgsmålsbox{
-              grid-column: 1fr;
-              text-align: center;           
-  
+            text-align: center;
           }
   
         #spørgsmålstekst{
@@ -573,8 +570,17 @@ h2{
            margin-top: 15%;
         }
 
-       
+        #tilbage-knap{
+            margin-top: 40%;
+        }
+    
+        #fortsæt-knap{
+            margin-top: 40%;
+          
     }
+
+}
+
     h1{
         font-size: $Heading-mobile-size;
     }
