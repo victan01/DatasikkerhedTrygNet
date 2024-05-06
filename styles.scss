@@ -862,3 +862,60 @@ br{
 
 
 
+.slideshow-container {
+    color: $font-color;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .slide {
+    display: none;
+    text-align: center;
+  }
+
+  .slide.active{
+    display: block;
+  }
+  
+  .prev, .next {
+    position: absolute;
+    top: 50%;
+    color: $font-color;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    z-index: 1000;
+    transform: translateY(-50%)
+
+  }
+  
+  .prev {
+    left: 15%;
+  
+  }
+  
+  .next {
+    right: 15%;
+   
+  }
+  
+      
+  
+  @media screen and (max-width: 500px) {
+    .prev, .next {
+      font-size: 14px;
+      padding: 12px;
+    }
+  }
+  
+  .report-btn {
+    display: block;
+    margin-top: 10px;
+  }
+  
+
+

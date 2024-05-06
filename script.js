@@ -87,7 +87,8 @@ let score = 0;
 
 
 /* Event og elementer, som skal skjules tilføjes + Spillet startes*/
- startBtn.addEventListener('click', startQuiz);
+
+   startBtn.addEventListener('click', startQuiz);
     function startQuiz () {
         console.log(startBtn);
         startBtn.classList.add('skjult');
@@ -129,7 +130,7 @@ function showQuestion() {
         questionContainer.style.backgroundRepeat = "no-repeat"; 
         questionContainer.style.backgroundPosition = "top center";
         break;
-   case 2:
+   case 3:
         questionContainer.style.backgroundImage = "url('Img/Img4Game/Question 4.png')";
         questionContainer.style.backgroundSize = "60%";
         questionContainer.style.backgroundRepeat = "no-repeat"; 
@@ -273,3 +274,45 @@ function showQuestion() {
   restartBtn.addEventListener('click', () => {
     window.location.href = "sikkerhedspil.html";
 });
+
+
+/*foto-carousel*/ 
+let slideIndex = 0;
+
+function showSlides() {
+    let slides = document.getElementsByClassName("slide");
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].classList.remove("active");
+        slides[i].style.display = "none";
+    }
+    slides[slideIndex].classList.add("active");
+    slides[slideIndex].style.display = "block";
+}
+
+function nextSlide() {
+    slideIndex++;
+    if (slideIndex >= slides.length) {
+        slideIndex = 0;
+    }
+    showSlides();
+}
+
+function prevSlide() {
+    slideIndex--;
+    if (slideIndex < 0) {
+        slideIndex = slides.length - 1;
+    }
+    showSlides();
+}
+
+document.getElementById("nextBtn").addEventListener("click", function () {
+    nextSlide();
+});
+
+document.getElementById("prevBtn").addEventListener("click", function () {
+    prevSlide();
+});
+
+window.onload = function () {
+    showSlides();
+};
