@@ -543,29 +543,37 @@ br {
 
 /* foooter slutter*/
 /* Cases siden*/
-nav {
+.tipsogtricks {
+  position: relative;
   display: flex;
   justify-content: center;
-  margin-bottom: 10%;
+  margin-bottom: 5%;
 }
-nav ul {
+.tipsogtricks ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
   display: flex;
 }
-nav li {
-  margin-top: 20px;
+.tipsogtricks ul li {
+  margin-top: 40px;
   margin-right: 10px;
+  opacity: 50%;
 }
-nav a {
+.tipsogtricks ul a {
   text-decoration: none;
   color: #F5FFFE;
   padding: 5px 10px;
-  font-size: 1.6rem;
+  font-size: 1.3rem;
+}
+.tipsogtricks ul a :hover {
+  text-decoration: underline;
 }
 
 .slideshow-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 100px;
   max-width: 1000px;
   margin: 0 auto;
   overflow: hidden;
@@ -573,21 +581,18 @@ nav a {
 }
 
 .slideshow-container h1 {
-  color: #F5FFFE;
+  color: #ff8a83;
   text-align: left;
 }
 
 .slideshow-container p {
-  color: #F5FFFE;
+  font-family: "Roboto";
+  src: url(../Datasikkerhed/Fonts/Roboto/Roboto-Regular.ttf);
   text-align: left;
 }
 
-.slide {
-  display: none;
+.slides {
   text-align: center;
-}
-.slide:first-child {
-  display: block;
 }
 
 /* Style af Quix efter start + responsivt af den del*/
@@ -832,6 +837,12 @@ nav a {
   .knap-placering {
     grid-column: 1;
   }
+  .slideshow-container h1 {
+    font-size: 2.625rem;
+  }
+  .slideshow-container p {
+    font-size: 1.6rem;
+  }
 }
 #valgmuligheds-box {
   display: grid;
@@ -919,6 +930,19 @@ nav a {
   .footer p {
     display: none;
   }
+  .tipsogtricks {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  li {
+    margin-top: 20px;
+    margin-right: 0;
+  }
+  .slideshow-container {
+    grid-template-columns: 1fr;
+    max-width: 100%;
+  }
 }
 @media only screen and (max-width: 1000px) {
   .quiz-started #tilbage-knap {
@@ -949,5 +973,13 @@ nav a {
   }
   .quiz-started #svar-box {
     justify-content: center;
+  }
+  .tipsogtricks {
+    display: none;
+  }
+  .slideshow-container {
+    margin: 10%;
+    grid-template-columns: 1fr;
+    max-width: 100%;
   }
 }/*# sourceMappingURL=styles.css.map */

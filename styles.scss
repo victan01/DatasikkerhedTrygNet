@@ -390,32 +390,43 @@ br{
 
 /* Cases siden*/
 
-nav{
+
+.tipsogtricks{
+    position: relative;
     display: flex;
     justify-content: center;
-    margin-bottom: 10%;
+    margin-bottom: 5%;
 
-    ul{
+     ul{
         list-style-type: none;
         padding: 0;
         margin: 0;
         display: flex;
-    }
+    
 
     li{
-        margin-top: 20px;
+        margin-top: 40px;
         margin-right: 10px;
+        opacity: 50%;
     }
 
     a{
         text-decoration: none;
         color: $font-color;
         padding: 5px 10px;
-        font-size: $broedtekst-font-size;
-    }
+        font-size: $footer-font-size;
+
+        :hover{
+            text-decoration: underline;
+        }
+  }
+ }
 }
 
 .slideshow-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 100px;
     max-width: 1000px;
     margin: 0 auto;
     overflow: hidden;
@@ -424,25 +435,21 @@ nav{
 }
 
 .slideshow-container h1 {
-    color: $font-color;
+    color:$font-color2;
     text-align: left;
 
 
 }
 
 .slideshow-container p {
-    color: $font-color;
+    font-family: "Roboto";
+    src: url(../Datasikkerhed/Fonts/Roboto/Roboto-Regular.ttf);
     text-align: left;
 
 
 }
-.slide {
-    display: none;
+.slides {
     text-align: center;
-    
-    &:first-child {
-        display: block;
-    }
 }
 
 
@@ -777,6 +784,16 @@ nav{
     .knap-placering{
         grid-column: 1;
     }
+
+
+    .slideshow-container h1{
+        font-size: $Heading-mobile-size;
+    }
+
+    .slideshow-container p{
+        font-size: $broedtekst-font-size
+    }
+
  }
 
 
@@ -859,9 +876,26 @@ nav{
         
         .footer p{
             display: none;
-        }     
+        } 
+        
+        .tipsogtricks {
+        flex-direction: column; 
+        align-items: center; 
+        margin-bottom: 10px; 
+    }
+
+    li {
+        margin-top: 20px; 
+        margin-right: 0; 
+    }
+
+    .slideshow-container {
+        grid-template-columns: 1fr;
+        max-width: 100%;
+    }
+}
    
- }
+ 
 
 
 
@@ -910,7 +944,22 @@ nav{
     }
   
   }
+
+  .tipsogtricks {
+    display: none;
+
 }
+
+.slideshow-container {
+    margin: 10%;
+    grid-template-columns: 1fr;
+    max-width: 100%;
+}
+
+
+}
+
+
 
 
 
