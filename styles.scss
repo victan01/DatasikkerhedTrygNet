@@ -359,6 +359,38 @@ br{
     }
 }
 
+/* foooter*/
+.footer{
+    margin-top: 20%;
+    background-color: $footer-color;
+    padding: 20px 0;
+    height: 200px;
+    font-size: $footer-font-size;
+    text-align: center;   
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer img{
+    margin-top: 10%;
+    max-width: 200px;
+    margin: 0 auto 0;
+}
+
+.footer p{
+    margin: 0;
+}
+
+
+
+
+
+
+
+
+
 
 /* Style af Quix efter start + responsivt af den del*/
 .quiz-started{
