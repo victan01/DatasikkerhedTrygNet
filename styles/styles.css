@@ -649,9 +649,18 @@ h2 {
     justify-content: center;
     align-items: center;
   }
+  .quiz-started .farve-ramme {
+    margin: 2% auto;
+    padding: 20px;
+    max-width: 800px;
+  }
   .quiz-started .Sikkerhedspil-box {
+    position: relative;
     display: grid;
     grid-template-columns: 1fr;
+    height: 0 auto;
+    margin: 0 auto;
+    max-width: 800px;
   }
   .quiz-started #spørgsmålsbox {
     text-align: center;
@@ -659,57 +668,64 @@ h2 {
   .quiz-started #spørgsmålstekst {
     grid-column: 1;
     margin-top: 28%;
-    margin-right: 35%;
   }
   .quiz-started #valgmuligheds-box {
     grid-column: 1;
     margin-top: 15%;
   }
   .quiz-started #tilbage-knap {
+    position: absolute;
     margin-top: 40%;
   }
   .quiz-started #fortsæt-knap {
+    position: absolute;
     margin-top: 40%;
   }
-  h1 {
-    font-size: 2.625rem;
-  }
-  p {
-    font-size: 1.1rem;
-  }
-  header {
-    height: 60px;
-  }
-  .navbar-desktop {
+  .quiz-started #fortsæt-knap #point-tælling {
     display: none;
   }
-  .navbar-mobile {
+  .quiz-started #fortsæt-knap #svar-box {
+    display: none;
+  }
+  .quiz-started h1 {
+    font-size: 2.625rem;
+  }
+  .quiz-started p {
+    font-size: 1.1rem;
+  }
+  .quiz-started header {
+    height: 60px;
+  }
+  .quiz-started .navbar-desktop {
+    display: none;
+  }
+  .quiz-started .navbar-mobile {
     display: grid;
     grid-template-columns: 1fr auto;
   }
-  .logo {
+  .quiz-started .logo {
     max-width: 110px;
   }
-  #sidebar {
+  .quiz-started #sidebar {
     display: none;
   }
-  main h1 {
+  .quiz-started main h1 {
     font-size: 2.625rem;
   }
-  main h2 {
+  .quiz-started main h2 {
     font-size: 2.625rem;
   }
-  .forside-section {
+  .quiz-started .forside-section {
     grid-template-columns: 1fr;
   }
-  .forside-faktakasser {
+  .quiz-started .forside-faktakasser {
     grid-template-columns: 1fr 1fr;
     justify-items: center;
   }
-  .navsection {
+  .quiz-started .navsection {
     display: none;
   }
-  .mainforspil {
+  .quiz-started .mainforspil {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
   }

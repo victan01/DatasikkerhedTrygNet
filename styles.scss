@@ -549,37 +549,54 @@ h2{
             align-items: center;
   
           }
-  
+          .farve-ramme{
+            margin: 2% auto;
+            padding: 20px;
+            max-width: 800px;
+
+          }
           .Sikkerhedspil-box{
+             position: relative;
              display: grid;
              grid-template-columns: 1fr;
+             height: 0 auto;
+             margin: 0 auto;
+             max-width: 800px;
+
           }
   
           #spørgsmålsbox{
             text-align: center;
           }
   
-        #spørgsmålstekst{
+         #spørgsmålstekst{
            grid-column: 1;
            margin-top: 28%;
-           margin-right: 35%;
         }
 
-        #valgmuligheds-box{
+         #valgmuligheds-box{
            grid-column: 1;
            margin-top: 15%;
         }
 
-        #tilbage-knap{
+         #tilbage-knap{
+            position: absolute;
             margin-top: 40%;
         }
     
-        #fortsæt-knap{
+         #fortsæt-knap{
+            position: absolute;
             margin-top: 40%;
-          
+        
+         #point-tælling{
+          display: none;
+       }
+
+        #svar-box{
+        display: none;
+       }
     }
 
-}
 
     h1{
         font-size: $Heading-mobile-size;
@@ -639,6 +656,7 @@ h2{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
     }
+}
     
       /*Reponsivt for spil*/
 
