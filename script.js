@@ -278,9 +278,9 @@ function showQuestion() {
 
 /*foto-carousel*/ 
 let slideIndex = 0;
+let slides = document.getElementsByClassName("slide");
 
 function showSlides() {
-    let slides = document.getElementsByClassName("slide");
     for (let i = 0; i < slides.length; i++) {
         slides[i].classList.remove("active");
         slides[i].style.display = "none";

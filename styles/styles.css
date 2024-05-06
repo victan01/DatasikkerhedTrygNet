@@ -542,6 +542,54 @@ br {
 }
 
 /* foooter slutter*/
+/* Cases siden*/
+nav {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10%;
+}
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+nav li {
+  margin-top: 20px;
+  margin-right: 10px;
+}
+nav a {
+  text-decoration: none;
+  color: #F5FFFE;
+  padding: 5px 10px;
+  font-size: 1.6rem;
+}
+
+.slideshow-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.slideshow-container h1 {
+  color: #F5FFFE;
+  text-align: left;
+}
+
+.slideshow-container p {
+  color: #F5FFFE;
+  text-align: left;
+}
+
+.slide {
+  display: none;
+  text-align: center;
+}
+.slide:first-child {
+  display: block;
+}
+
 /* Style af Quix efter start + responsivt af den del*/
 .quiz-started #introduktion {
   display: none;
@@ -902,52 +950,4 @@ br {
   .quiz-started #svar-box {
     justify-content: center;
   }
-}
-.slideshow-container {
-  color: #F5FFFE;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
-
-.slide {
-  display: none;
-  text-align: center;
-}
-
-.slide.active {
-  display: block;
-}
-
-.prev, .next {
-  position: absolute;
-  top: 50%;
-  color: #F5FFFE;
-  font-size: 20px;
-  cursor: pointer;
-  background-color: transparent;
-  border: none;
-  z-index: 1000;
-  transform: translateY(-50%);
-}
-
-.prev {
-  left: 15%;
-}
-
-.next {
-  right: 15%;
-}
-
-@media screen and (max-width: 500px) {
-  .prev, .next {
-    font-size: 14px;
-    padding: 12px;
-  }
-}
-.report-btn {
-  display: block;
-  margin-top: 10px;
 }/*# sourceMappingURL=styles.css.map */
