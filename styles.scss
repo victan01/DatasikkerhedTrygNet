@@ -145,6 +145,10 @@ h2{
     display: inline;
 }
 
+br{
+    display: none
+}
+
 .borderbutton{
     @include border-btn;
     margin-left: 1%;
@@ -607,7 +611,9 @@ h2{
     }
 
 
-    h1{
+@media only screen and (max-width: 1098px) and (min-width: 601px) {
+
+  h1{
         font-size: $Heading-mobile-size;
     }
 
@@ -653,8 +659,11 @@ h2{
     }
 
     .forside-faktakasser{
-        grid-template-columns: 1fr 1fr;
+        display: grid;
+        grid-template-columns: 1fr;
         justify-items: center;
+        gap: 20px;
+    
     }
 
     .navsection{
@@ -666,8 +675,6 @@ h2{
         grid-template-columns: 1fr 1fr 1fr;
     }
 }
-    
-      /*Reponsivt for spil*/
 
     .farve-ramme{
         padding: 20px;
@@ -695,6 +702,8 @@ h2{
         grid-column: 1;
     }
  }
+
+}
 
    #valgmuligheds-box{
 
@@ -733,24 +742,54 @@ h2{
         .knap-placering{
             grid-column: 1;
         }
+    }
+
+     .forside-section{
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+        .forside-faktakasser{
+         display: grid;
+         grid-template-columns: 1fr;
+         margin-bottom: 50%;
+         justify-items: center;
+    
+        }
+        
+        #datasikkerhed-section{
+            display: grid;
+            grid-template-columns: 1fr;
+        
+        }
+            
+        .datasikkerhed-tekst{
+            display: grid;
+            grid-template-columns: 1fr;
+            margin-bottom: 50%;
+           
+        }
+
+        .datasikkerheds-box{
+            display: none;
+        }
+        
    
  }
 
-}
+
 
 
 @media only screen and (max-width: 500px) {
-    .forside-faktakasser{
-     grid-template-columns: 1fr;
-     margin-bottom: 50%;
-    }
+   
+.navsection{
+    display: none;
+}
 
- .datasikkerhed-tekst{
-    display: grid;
-    grid-template-columns: 1fr;
-    
-  }
 
+.datasikkerhed-tekst h1{
+    font-size: $Heading-mobile-size;
+    float: left;
+}
   .introduktion h1{
     font-size: $Heading-mobile-size; 
 

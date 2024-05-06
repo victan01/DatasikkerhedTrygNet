@@ -67,6 +67,10 @@ $box-shadow2: 0 3px 6px rgba(255, 255, 255, 0.5),
     font-size: 1.125rem; 
     box-shadow: $box-shadow2;
 
+    @media only screen and (max-width: 500px){
+        padding: 14px 10px;
+    }
+
 }
 @mixin border-btn {
     background: transparent;

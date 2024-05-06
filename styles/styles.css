@@ -52,6 +52,12 @@ header {
   cursor: pointer;
   transition: background-color 0.3s, color 0, 3s;
   font-size: 1.125rem;
+  box-shadow: 0 3px 6px rgba(255, 255, 255, 0.5), 0 12px 24px rgba(0, 0, 0, 0.4);
+}
+@media only screen and (max-width: 500px) {
+  .Rapporter-button {
+    padding: 14px 10px;
+  }
 }
 
 .Rapporter-button:hover {
@@ -149,6 +155,10 @@ h2 {
   display: inline;
 }
 
+br {
+  display: none;
+}
+
 .borderbutton {
   background: transparent;
   border: 2px solid #00A3FF;
@@ -159,7 +169,7 @@ h2 {
   transition: background-color 0.3s, color 0, 3s;
   font-size: 1.6rem;
   margin-left: 1%;
-  box-shadow: 0 2px 4px rgba(255, 255, 255, 0.4), 0 8px 16px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 3px 6px rgba(255, 255, 255, 0.5), 0 12px 24px rgba(0, 0, 0, 0.4);
 }
 @media only screen and (max-width: 768px) {
   .borderbutton {
@@ -181,7 +191,7 @@ h2 {
   transition: background-color 0.3s, color 0, 3s;
   font-size: 1.6rem;
   margin-bottom: 3%;
-  box-shadow: 0 2px 4px rgba(255, 255, 255, 0.4), 0 8px 16px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 3px 6px rgba(255, 255, 255, 0.5), 0 12px 24px rgba(0, 0, 0, 0.4);
 }
 @media only screen and (max-width: 768px) {
   .bluebutton {
@@ -214,7 +224,7 @@ h2 {
   flex-direction: row;
   font-size: 1.6rem;
   margin: 20px;
-  box-shadow: 0 2px 4px rgba(255, 255, 255, 0.4), 0 8px 16px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 3px 6px rgba(255, 255, 255, 0.5), 0 12px 24px rgba(0, 0, 0, 0.4);
 }
 
 .faktaikon img {
@@ -692,6 +702,8 @@ h2 {
   .quiz-started #fortsæt-knap #svar-box {
     display: none;
   }
+}
+@media only screen and (max-width: 1098px) and (min-width: 601px) and (max-width: 1098px) and (min-width: 601px) {
   .quiz-started h1 {
     font-size: 2.625rem;
   }
@@ -724,8 +736,10 @@ h2 {
     grid-template-columns: 1fr;
   }
   .quiz-started .forside-faktakasser {
-    grid-template-columns: 1fr 1fr;
+    display: grid;
+    grid-template-columns: 1fr;
     justify-items: center;
+    gap: 20px;
   }
   .quiz-started .navsection {
     display: none;
@@ -734,27 +748,28 @@ h2 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
   }
-  /*Reponsivt for spil*/
-  .farve-ramme {
+}
+@media only screen and (max-width: 1098px) and (min-width: 601px) {
+  .quiz-started .farve-ramme {
     padding: 20px;
     grid-column: 2;
     margin: 2% 10% 2% 10%;
   }
-  .introduktion {
+  .quiz-started .introduktion {
     display: grid;
     grid-template-columns: 1fr;
   }
-  .introduktion h1 {
+  .quiz-started .introduktion h1 {
     grid-column: 1;
     font-size: 2.625rem;
     margin: 2% 21% 2% 21%;
   }
-  .introduktion p {
+  .quiz-started .introduktion p {
     font-size: 1.6rem;
     grid-column: 1;
     margin: 2% 21% 2% 21%;
   }
-  .knap-placering {
+  .quiz-started .knap-placering {
     grid-column: 1;
   }
 }
@@ -805,15 +820,36 @@ h2 {
   .farve-ramme .knap-placering {
     grid-column: 1;
   }
-}
-@media only screen and (max-width: 500px) {
+  .forside-section {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
   .forside-faktakasser {
+    display: grid;
     grid-template-columns: 1fr;
     margin-bottom: 50%;
+    justify-items: center;
+  }
+  #datasikkerhed-section {
+    display: grid;
+    grid-template-columns: 1fr;
   }
   .datasikkerhed-tekst {
     display: grid;
     grid-template-columns: 1fr;
+    margin-bottom: 50%;
+  }
+  .datasikkerheds-box {
+    display: none;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .navsection {
+    display: none;
+  }
+  .datasikkerhed-tekst h1 {
+    font-size: 2.625rem;
+    float: left;
   }
   .introduktion h1 {
     font-size: 2.625rem;
