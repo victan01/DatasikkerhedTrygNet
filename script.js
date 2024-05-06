@@ -62,24 +62,24 @@ let score = 0;
  const questions = [
   {
     question: 'Anna er på udgik efter sin drømme computer og finder en butik, som sælger den til en meget lav pris'
-    ,options: ['Klikke på "Køb nu" og købe den med det samme','Undersøge butikken nærmere for at sikre sig, at den er troværdig' ],
+    ,options: ['1. Klikke på "Køb nu" og købe den med det samme','2. Undersøge butikken nærmere for at sikre sig, at den er troværdig' ],
     correctAnswerIndex : 1
   },
   {
     question: 'Anna støder på en online butik med profesionelt design og meget positive anmeldelser',
-    options: ['Stole på butikkens troværdighed og foretage købet med det samme','Undersøge ydligere i anmeldelser for at sikre at butikken er troværdig' ]
+    options: ['1. Stole på butikkens troværdighed og foretage købet med det samme','2. Undersøge ydligere i anmeldelser for at sikre at butikken er troværdig' ]
     ,correctAnswerIndex : 1
   },
 
   {
     question: 'Anna er inde på et website, som kræver betalling via gavekort og bankoverførsel uden kreditkort',
-    options: ['Stoppe købet og undersøge yderligere for at undgå svindel','Følge den nye betalingsmetode for at undgå svindel' ]
+    options: ['1. Stoppe købet og undersøge yderligere for at undgå svindel','1. Følge den nye betalingsmetode for at undgå svindel' ]
     ,correctAnswerIndex : 0
   },
 
   {
     question: 'Anna skal købe en kjole og hun opdager online butikken ikke har nogle kontaktinformationer, eller kundeservicechat',
-    options: ['En butik behøver ikke kontakt information, så hun køber bare kjolen', 'Undersøger websitet og tjekker eventuelle anmeldelser for at sikre butikken er troværdig']
+    options: ['1. En butik behøver ikke kontakt information, så hun køber bare kjolen', '2. Undersøger websitet og tjekker eventuelle anmeldelser for at sikre butikken er troværdig']
     ,correctAnswerIndex : 1
   } 
 ]

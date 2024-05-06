@@ -306,7 +306,7 @@ br {
 /* section 2 - + nav- slutter*/
 /*Sikkerhedspillet forside style*/
 .mainforspil {
-  max-width: 100%;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
   box-sizing: border-box;
@@ -351,7 +351,7 @@ br {
 }
 
 .farve-ramme {
-  margin: 2% 15% 2% 15%;
+  margin: auto 12% auto 12%;
   padding: 20px;
   border: 10px solid #00A3FF;
   border-radius: 7%;
@@ -419,6 +419,16 @@ br {
   font-size: 1.6rem;
   box-shadow: 0 0 10px rgba(0, 216, 236, 0.882), 0 0 20px rgba(0, 216, 236, 0.882), 0 0 30px rgba(0, 216, 236, 0.882);
 }
+@media only screen and (max-width: 1098px) and (min-width: 601px) {
+  #valgmuligheds-box button {
+    width: 300px;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  #valgmuligheds-box button {
+    width: 250px;
+  }
+}
 @media only screen and (max-width: 500px) {
   #valgmuligheds-box button {
     font-size: 1.2rem;
@@ -440,10 +450,8 @@ br {
 }
 @media only screen and (max-width: 500px) {
   #tilbage-knap {
-    font-size: 1.1rem;
-    padding: 10%;
-    width: 220px;
-    margin: 3%;
+    padding: 30px;
+    width: 200px;
   }
 }
 
@@ -474,10 +482,8 @@ br {
 }
 @media only screen and (max-width: 500px) {
   #svar-box button {
-    font-size: 1.1rem;
-    padding: 10%;
-    width: 220px;
-    margin: 3%;
+    padding: 30px;
+    width: 200px;
   }
 }
 
@@ -513,7 +519,7 @@ br {
   margin-top: 20%;
   background-color: #CCCCCC;
   padding: 20px 0;
-  height: 200px;
+  height: 260px;
   font-size: 1.3rem;
   text-align: center;
   display: grid;
@@ -529,9 +535,13 @@ br {
 }
 
 .footer p {
-  margin: 0;
+  margin-bottom: 20px;
+  width: 950px;
+  margin: 0 auto 0;
+  opacity: 65%;
 }
 
+/* foooter slutter*/
 /* Style af Quix efter start + responsivt af den del*/
 .quiz-started #introduktion {
   display: none;
@@ -571,7 +581,7 @@ br {
   box-shadow: 0 0 10px rgba(239, 0, 0, 0.882), 0 0 20px rgba(239, 0, 0, 0.882), 0 0 30px rgba(239, 0, 0, 0.882);
 }
 .quiz-started .valgmulighedsknap {
-  width: 110%;
+  width: 100%;
 }
 .quiz-started #tilbage-knap {
   position: absolute;
@@ -650,7 +660,7 @@ br {
     font-size: 1.4rem;
   }
   .quiz-started #valgmuligheds-box {
-    margin-top: 65%;
+    margin-top: 45%;
     margin-bottom: 10%;
   }
   .quiz-started #svar-box {
@@ -671,8 +681,8 @@ br {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 10%;
-    bottom: -15%;
+    margin: 20%;
+    bottom: -25%;
   }
 }
 
@@ -708,98 +718,77 @@ br {
     grid-column: 1;
     margin-top: 28%;
   }
-  .quiz-started #valgmuligheds-box {
-    grid-column: 1;
-    margin-top: 15%;
-  }
   .quiz-started #tilbage-knap {
     position: absolute;
-    margin-top: 40%;
+    margin-top: 30%;
   }
-  .quiz-started #fortsæt-knap {
-    position: absolute;
-    margin-top: 40%;
-  }
-  .quiz-started #fortsæt-knap #point-tælling {
-    display: none;
-  }
-  .quiz-started #fortsæt-knap #svar-box {
-    display: none;
-  }
+  /* Til andet end spil*/
 }
 @media only screen and (max-width: 1098px) and (min-width: 601px) and (max-width: 1098px) and (min-width: 601px) {
-  .quiz-started h1 {
+  h1 {
     font-size: 2.625rem;
   }
-  .quiz-started p {
+  p {
     font-size: 1.1rem;
   }
-  .quiz-started header {
+  header {
     height: 60px;
   }
-  .quiz-started .navbar-desktop {
+  .navbar-desktop {
     display: none;
   }
-  .quiz-started .navbar-mobile {
+  .navbar-mobile {
     display: grid;
     grid-template-columns: 1fr auto;
   }
-  .quiz-started .logo {
+  .logo {
     max-width: 110px;
   }
-  .quiz-started #sidebar {
+  #sidebar {
     display: none;
   }
-  .quiz-started main h1 {
+  main h1 {
     font-size: 2.625rem;
   }
-  .quiz-started main h2 {
+  main h2 {
     font-size: 2.625rem;
   }
-  .quiz-started .forside-section {
+  .forside-section {
     grid-template-columns: 1fr;
   }
-  .quiz-started .forside-faktakasser {
+  .forside-faktakasser {
     display: grid;
     grid-template-columns: 1fr;
     justify-items: center;
     gap: 20px;
   }
-  .quiz-started .navsection {
+  .navsection {
     display: none;
-  }
-  .quiz-started .mainforspil {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 @media only screen and (max-width: 1098px) and (min-width: 601px) {
-  .quiz-started .farve-ramme {
-    padding: 20px;
-    grid-column: 2;
-    margin: 2% 10% 2% 10%;
-  }
-  .quiz-started .introduktion {
+  .introduktion {
     display: grid;
     grid-template-columns: 1fr;
   }
-  .quiz-started .introduktion h1 {
+  .introduktion h1 {
     grid-column: 1;
     font-size: 2.625rem;
     margin: 2% 21% 2% 21%;
   }
-  .quiz-started .introduktion p {
+  .introduktion p {
     font-size: 1.6rem;
     grid-column: 1;
     margin: 2% 21% 2% 21%;
   }
-  .quiz-started .knap-placering {
+  .knap-placering {
     grid-column: 1;
   }
 }
 #valgmuligheds-box {
   display: grid;
-  grid-template-columns: 1fr;
+  justify-content: center;
+  align-items: center;
   margin: 5%;
 }
 #valgmuligheds-box button {
@@ -814,6 +803,16 @@ br {
   font-size: 1.6rem;
   box-shadow: 0 0 10px rgba(0, 216, 236, 0.882), 0 0 20px rgba(0, 216, 236, 0.882), 0 0 30px rgba(0, 216, 236, 0.882);
 }
+@media only screen and (max-width: 1098px) and (min-width: 601px) {
+  #valgmuligheds-box button {
+    width: 300px;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  #valgmuligheds-box button {
+    width: 250px;
+  }
+}
 @media only screen and (max-width: 500px) {
   #valgmuligheds-box button {
     font-size: 1.2rem;
@@ -824,10 +823,6 @@ br {
 }
 
 @media only screen and (max-width: 768px) {
-  .mainforspil {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-  }
   .farve-ramme {
     margin: 2% 20% 2% 20%;
   }
@@ -866,6 +861,25 @@ br {
   .datasikkerheds-box {
     display: none;
   }
+  .footer {
+    margin-top: 0;
+    height: 100px;
+  }
+  .footer img {
+    display: none;
+  }
+  .footer p {
+    display: none;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .quiz-started #tilbage-knap {
+    display: none;
+  }
+  .quiz-started #valgmuligheds-box {
+    margin-top: 20%;
+    font-size: 1.6rem;
+  }
 }
 @media only screen and (max-width: 500px) {
   .navsection {
@@ -880,5 +894,12 @@ br {
   }
   .introduktion p {
     font-size: 1.6rem;
+  }
+  .quiz-started #valgmuligheds-box {
+    margin-top: 40%;
+    font-size: 1.6rem;
+  }
+  .quiz-started #svar-box {
+    justify-content: center;
   }
 }/*# sourceMappingURL=styles.css.map */
