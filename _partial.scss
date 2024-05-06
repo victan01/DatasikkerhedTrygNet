@@ -233,14 +233,13 @@ $button-font-size: 1.6rem;
 }
 
 @mixin fortsæt-knap{
-    background: white;
-    color: #090A0B;
+    background: $borderbox-color;
+    color: black;
     padding: 10px 30px;
     border-radius: 16px;
     cursor: pointer;
     transition: background-color 0.3s, color 0,3s;
     font-size: 1.4rem;     
-    box-shadow: 0 0 10px $cta-buttonglow,0 0 20px $cta-buttonglow,0 0 30px $cta-buttonglow;   
 
     @media only screen and (max-width: 500px){
         font-size: 1.1rem;
@@ -252,14 +251,13 @@ $button-font-size: 1.6rem;
 
 
 @mixin try-knap{
-    background: black;
+    background: $cta-button;
     color: $button-color;
     padding: 10px 30px;
     border-radius: 16px;
     cursor: pointer;
     transition: background-color 0.3s, color 0,3s;
     font-size: 2.0rem;     
-    box-shadow: 0 0 10px $cta-buttonglow,0 0 20px $cta-buttonglow,0 0 30px $cta-buttonglow;   
   
 
     @media only screen and (max-width: 500px){

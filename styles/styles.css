@@ -414,14 +414,13 @@ h2 {
 }
 
 #tilbage-knap {
-  background: white;
-  color: #090A0B;
+  background: #ff8a83;
+  color: black;
   padding: 10px 30px;
   border-radius: 16px;
   cursor: pointer;
   transition: background-color 0.3s, color 0, 3s;
   font-size: 1.4rem;
-  box-shadow: 0 0 10px rgba(0, 216, 236, 0.882), 0 0 20px rgba(0, 216, 236, 0.882), 0 0 30px rgba(0, 216, 236, 0.882);
 }
 @media only screen and (max-width: 500px) {
   #tilbage-knap {
@@ -448,14 +447,13 @@ h2 {
 }
 #svar-box button {
   grid-column: 2;
-  background: white;
-  color: #090A0B;
+  background: #ff8a83;
+  color: black;
   padding: 10px 30px;
   border-radius: 16px;
   cursor: pointer;
   transition: background-color 0.3s, color 0, 3s;
   font-size: 1.4rem;
-  box-shadow: 0 0 10px rgba(0, 216, 236, 0.882), 0 0 20px rgba(0, 216, 236, 0.882), 0 0 30px rgba(0, 216, 236, 0.882);
 }
 @media only screen and (max-width: 500px) {
   #svar-box button {
@@ -471,14 +469,13 @@ h2 {
   grid-template-columns: 1fr;
 }
 #slut button {
-  background: black;
+  background: #00A3FF;
   color: #F5FFFE;
   padding: 10px 30px;
   border-radius: 16px;
   cursor: pointer;
   transition: background-color 0.3s, color 0, 3s;
   font-size: 2rem;
-  box-shadow: 0 0 10px rgba(0, 216, 236, 0.882), 0 0 20px rgba(0, 216, 236, 0.882), 0 0 30px rgba(0, 216, 236, 0.882);
 }
 @media only screen and (max-width: 500px) {
   #slut button {
