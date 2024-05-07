@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 206 72.7">
+  <defs>
+    <style>
+      .cls-1 {
+        letter-spacing: 0em;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4 {
+        isolation: isolate;
+      }
+
+      .cls-1, .cls-2, .cls-4 {
+        fill: #70a37e;
+        font-family: AlegreyaSans-BoldItalic, 'Alegreya Sans';
+        font-size: 66.4px;
+        font-style: italic;
+        font-weight: 700;
+      }
+
+      .cls-2 {
+        letter-spacing: 0em;
+      }
+    </style>
+  </defs>
+  <g class="cls-3">
+    <g class="cls-3">
+      <text class="cls-4" transform="translate(27.5 56.5) scale(1 1)"><tspan x="0" y="0">T</tspan></text>
+    </g>
+    <g class="cls-3">
+      <text class="cls-2" transform="translate(60.3 56.5) scale(1 1)"><tspan x="0" y="0">R</tspan></text>
+    </g>
+    <g class="cls-3">
+      <text class="cls-1" transform="translate(97.2 56.5) scale(1 1)"><tspan x="0" y="0">Y</tspan></text>
+    </g>
+    <g class="cls-3">
+      <text class="cls-4" transform="translate(131.5 56.5) scale(1 1)"><tspan x="0" y="0">G</tspan></text>
+    </g>
+  </g>
+</svg>
