@@ -450,7 +450,6 @@ br {
 }
 @media only screen and (max-width: 500px) {
   #tilbage-knap {
-    margin-top: 20%;
     padding: 30px;
     width: 200px;
   }
@@ -483,7 +482,6 @@ br {
 }
 @media only screen and (max-width: 500px) {
   #svar-box button {
-    margin-top: 20%;
     padding: 30px;
     width: 200px;
   }
