@@ -923,7 +923,6 @@ br{
 
 .datasikkerhed-tekst h1{
     font-size: $Heading-mobile-size;
-    float: left;
 }
   .introduktion h1{
     font-size: $Heading-mobile-size; 
@@ -942,8 +941,11 @@ br{
     #svar-box{
         justify-content: center;
     }
+
+}
+    
   
-  }
+
 
   .tipsogtricks {
     display: none;
