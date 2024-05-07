@@ -1,42 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 206.02 72.7">
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 206 72.7">
   <defs>
     <style>
+      .cls-1 {
+        letter-spacing: 0em;
+      }
+
       .cls-1, .cls-2, .cls-3, .cls-4 {
         isolation: isolate;
       }
 
       .cls-1, .cls-2, .cls-4 {
-        fill: #ba0a00;
+        fill: #70a37e;
         font-family: AlegreyaSans-BoldItalic, 'Alegreya Sans';
-        font-size: 66.36px;
+        font-size: 66.4px;
         font-style: italic;
         font-weight: 700;
       }
 
-      .cls-5 {
-        fill: #0047ff;
-        stroke-width: 0px;
-      }
-
       .cls-2 {
-        letter-spacing: -.04em;
-      }
-
-      .cls-4 {
-        letter-spacing: -.03em;
+        letter-spacing: 0em;
       }
     </style>
   </defs>
   <g class="cls-3">
-    <text class="cls-1" transform="translate(0 54.52) scale(1.02 1)"><tspan x="0" y="0">T</tspan></text>
-    <text class="cls-4" transform="translate(32.82 54.52) scale(1.02 1)"><tspan x="0" y="0">R</tspan></text>
-    <text class="cls-2" transform="translate(69.79 54.52) scale(1.02 1)"><tspan x="0" y="0">Y</tspan></text>
-    <text class="cls-1" transform="translate(104.03 54.52) scale(1.02 1)"><tspan x="0" y="0">G</tspan></text>
-  </g>
-  <g>
-    <path class="cls-5" d="M164.18,44.6c-.29,3.95-.43,5.93-.72,9.89-2.14.03-3.21.05-5.35.08-3.01-8.88-4.52-13.4-7.54-22.59-.14,0-.2,0-.34-.01-.42,4.52-.63,6.79-1.06,11.33-.33,4.56-.5,6.85-.83,11.43-1.82.03-2.74.04-4.56.07.45-3.98.68-5.97,1.13-9.93.75-9.44,1.13-14.15,1.88-23.51,2.14.13,3.21.19,5.35.32,3.01,9.23,4.52,13.77,7.54,22.69h.34c.77-8.78,1.15-13.15,1.92-21.86,1.85-.05,2.78-.07,4.64-.12-.96,8.83-1.45,13.28-2.41,22.21h0Z"/>
-    <path class="cls-5" d="M176.84,28.23c-.33,3.06-.5,4.6-.83,7.68,1.61.07,2.42.1,4.03.17,1.54,0,2.31-.02,3.84-.03.11.19.16.29.26.48-.33,1.87-.5,2.81-.83,4.7-1.66-.08-2.49-.13-4.14-.21-1.49,0-2.24,0-3.73,0-.15,1.36-.23,2.04-.38,3.4-.15,1.92-.23,2.89-.38,4.82,1.67,0,2.51.02,4.18.04,2.32-.1,3.48-.15,5.8-.25.08.19.11.29.19.47-.3,1.88-.45,2.82-.75,4.71-5.92.09-8.89.13-14.81.22.47-3.79.7-5.69,1.17-9.46.75-8.86,1.13-13.28,1.88-22.06,5.97.36,8.95.54,14.92.89.09.19.14.29.23.49-.33,1.85-.5,2.78-.83,4.63-2.25-.2-3.37-.3-5.61-.51-1.69-.06-2.53-.09-4.22-.15v-.02Z"/>
-    <path class="cls-5" d="M206,25.35c-.3,1.75-.45,2.62-.75,4.38-1.76-.19-2.64-.29-4.41-.48-.57-.03-.86-.04-1.43-.07-.71,6.14-1.06,9.22-1.77,15.42-.3,3.75-.45,5.63-.75,9.39-1.99.03-2.98.05-4.97.08.48-3.59.72-5.38,1.21-8.95.57-6.49.86-9.73,1.43-16.17-.59-.03-.88-.04-1.47-.07-1.82.02-2.74.04-4.56.06-.11-.19-.16-.29-.26-.48.33-1.83.5-2.74.83-4.57,6.68.4,10.02.6,16.69,1,.09.19.14.28.23.46h-.02Z"/>
+    <g class="cls-3">
+      <text class="cls-4" transform="translate(27.5 56.5) scale(1 1)"><tspan x="0" y="0">T</tspan></text>
+    </g>
+    <g class="cls-3">
+      <text class="cls-2" transform="translate(60.3 56.5) scale(1 1)"><tspan x="0" y="0">R</tspan></text>
+    </g>
+    <g class="cls-3">
+      <text class="cls-1" transform="translate(97.2 56.5) scale(1 1)"><tspan x="0" y="0">Y</tspan></text>
+    </g>
+    <g class="cls-3">
+      <text class="cls-4" transform="translate(131.5 56.5) scale(1 1)"><tspan x="0" y="0">G</tspan></text>
+    </g>
   </g>
 </svg>
