@@ -527,9 +527,13 @@ br{
         right: 25%;
         transform: translateX(50%);
         padding: 5%;
-
+        
+        button{
+            @include fortsæt-knap;
+            width: 100%;
+        }
         button:hover{
-            @include hoverforgamebutton
+            @include hoverforgamebutton;
 
         }
 
@@ -626,11 +630,8 @@ br{
     
 
         #fortsæt-knap{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin: 20%;
-            bottom: -25%;
+            position: static;
+            justify-self: center;
         }
     }
 
@@ -914,6 +915,23 @@ br{
             font-size: $broedtekst-font-size;
         }
 
+        #svar-box{
+            justify-content: center;
+        }
+    
+        #fortsæt-knap{
+            position: static;
+            transform: translateX(0);
+            margin-top: 0%;
+          
+        }
+    
+        #svar-box{
+            button{
+                grid-column: 2;
+             }
+        }
+
   }
  
 }
@@ -952,7 +970,7 @@ br{
     padding: 10%;
 }
     .slides {
-        width: 70%;
+        width: 80%;
     }
   .tipsogtricks {
     display: none;
@@ -970,13 +988,21 @@ br{
 
     #fortsæt-knap{
         position: static;
-        margin-top: 60%;
-        justify-self: center;
+        transform: translateX(0);
+        margin-top: 15%;
+      
     }
+
+    #svar-box{
+        button{
+            grid-column: 3;
+         }
+    }
+}  
 } 
 
 
-}
+
 
 
 

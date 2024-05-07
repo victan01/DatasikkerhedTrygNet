@@ -450,8 +450,9 @@ br {
 }
 @media only screen and (max-width: 500px) {
   #tilbage-knap {
-    padding: 30px;
-    width: 200px;
+    padding: 50px;
+    width: 100%;
+    max-width: 400px;
   }
 }
 
@@ -482,8 +483,9 @@ br {
 }
 @media only screen and (max-width: 500px) {
   #svar-box button {
-    padding: 30px;
-    width: 200px;
+    padding: 50px;
+    width: 100%;
+    max-width: 400px;
   }
 }
 
@@ -654,6 +656,24 @@ br {
   transform: translateX(50%);
   padding: 5%;
 }
+.quiz-started #fortsæt-knap button {
+  background: #DC9784;
+  color: black;
+  padding: 10px 30px;
+  border-radius: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0, 3s;
+  font-size: 1.4rem;
+  box-shadow: 0 2px 4px rgba(255, 255, 255, 0.4), 0 8px 16px rgba(0, 0, 0, 0.3);
+  width: 100%;
+}
+@media only screen and (max-width: 500px) {
+  .quiz-started #fortsæt-knap button {
+    padding: 50px;
+    width: 100%;
+    max-width: 400px;
+  }
+}
 .quiz-started #fortsæt-knap button:hover {
   cursor: pointer;
   transform: scale(1);
@@ -730,11 +750,8 @@ br {
     display: none;
   }
   .quiz-started #svar-box #fortsæt-knap {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 20%;
-    bottom: -25%;
+    position: static;
+    justify-self: center;
   }
 }
 
@@ -954,6 +971,17 @@ br {
     margin-top: 20%;
     font-size: 1.6rem;
   }
+  .quiz-started #svar-box {
+    justify-content: center;
+  }
+  .quiz-started #fortsæt-knap {
+    position: static;
+    transform: translateX(0);
+    margin-top: 0%;
+  }
+  .quiz-started #svar-box button {
+    grid-column: 2;
+  }
 }
 @media only screen and (max-width: 500px) {
   .navbar-desktop {
@@ -983,7 +1011,7 @@ br {
     padding: 10%;
   }
   .slides {
-    width: 70%;
+    width: 80%;
   }
   .tipsogtricks {
     display: none;
@@ -997,7 +1025,10 @@ br {
   }
   .quiz-started #fortsæt-knap {
     position: static;
-    margin-top: 60%;
-    justify-self: center;
+    transform: translateX(0);
+    margin-top: 15%;
+  }
+  .quiz-started #svar-box button {
+    grid-column: 3;
   }
 }/*# sourceMappingURL=styles.css.map */

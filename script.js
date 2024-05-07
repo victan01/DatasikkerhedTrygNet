@@ -4,15 +4,31 @@ const menubtn = document.getElementById("menu-btn")
 const sidebar = document.getElementById("sidebar")
 const content = document.querySelector("menucontent")
 
+let menuOpen = false;
+
+sidebar.style.display = "none";
+
 menubtn.addEventListener("click",()=>{
-    if(sidebar.style.display === "none" || sidebar.style.display === '') {
+    if (!menuOpen){
        sidebar.style.display="block";
        content.style.marginleft = "200px";
+       menuOpen = true;
     } else{
         sidebar.style.display ="none";
         content.style.marginleft= "0";
+        menuOpen = false;
 
     }
+});
+
+const menuLinks = document.querySelectorAll("#sidebar a");
+menuLinks.forEach(link => {
+    link.addEventListener("click", () => {
+        // Luk menuen
+        sidebar.style.display = "none";
+        content.style.marginLeft = "0";
+        menuOpen = false;
+    });
 });
 
 /*Faktakasser (counter)*/
