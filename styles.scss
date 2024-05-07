@@ -152,7 +152,7 @@ br{
 .borderbutton{
     @include border-btn;
     margin-left: 1%;
-    box-shadow: $box-shadow2;
+    box-shadow: $box-shadow3;
 
 }
 
@@ -163,7 +163,7 @@ br{
 
 .bluebutton{
     @include blue-btn;  
-    box-shadow: $box-shadow2;
+    box-shadow: $box-shadow3;
 
 }
 
@@ -430,7 +430,6 @@ br{
     max-width: 1000px;
     margin: 0 auto;
     overflow: hidden;
-    position: relative;
 
 }
 
@@ -813,6 +812,14 @@ br{
 
 
 @media only screen and (max-width: 768px){
+    .navbar-desktop{
+        display: none;
+    }
+
+    .navbar-mobile{
+        display: grid;
+        grid-template-columns: 1fr auto;
+    }
   
 
     .farve-ramme{
@@ -884,15 +891,12 @@ br{
         margin-bottom: 10px; 
     }
 
-    li {
-        margin-top: 20px; 
-        margin-right: 0; 
-    }
 
-    .slideshow-container {
+
+     .slideshow-container {
         grid-template-columns: 1fr;
-        max-width: 100%;
-    }
+        padding: 10%;
+     }
 }
    
  
@@ -915,13 +919,22 @@ br{
 }
 
 @media only screen and (max-width: 500px) {
+
+    .navbar-desktop{
+        display: none;
+    }
+
+    .navbar-mobile{
+        display: grid;
+        grid-template-columns: 1fr auto;
+    }
    
-.navsection{
+  .navsection{
     display: none;
 }
 
 
-.datasikkerhed-tekst h1{
+ .datasikkerhed-tekst h1{
     font-size: $Heading-mobile-size;
 }
   .introduktion h1{
@@ -931,7 +944,20 @@ br{
  .introduktion p{
    font-size: $broedtekst-font-size;
   } 
+ .tips .footer{
+    margin-top: 60%;
+ }
+  .slideshow-container {
+    grid-template-columns: 1fr;
+    padding: 10%;
+}
+    .slides {
+        width: 70%;
+    }
+  .tipsogtricks {
+    display: none;
 
+ }
   .quiz-started{
     #valgmuligheds-box{
         margin-top: 40%;
@@ -942,24 +968,17 @@ br{
         justify-content: center;
     }
 
-}
-    
-  
-
-
-  .tipsogtricks {
-    display: none;
-
-}
-
-.slideshow-container {
-    margin: 10%;
-    grid-template-columns: 1fr;
-    max-width: 100%;
-}
+    #fortsæt-knap{
+        position: static;
+        margin-top: 60%;
+        justify-self: center;
+    }
+} 
 
 
 }
+
+
 
 
 

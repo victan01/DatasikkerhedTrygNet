@@ -6,13 +6,13 @@ $button-color:#F5FFFE;
 $button-hover-white:#F5FFFE;
 $button-border-color:#F5FFFE;
 $font-color:#F5FFFE;
-$font-color2:#ff8a83;
+$font-color2:#DC9784;
 $font-color3:#090A0B;
-$cta-button: #00A3FF;
+$cta-button: #008EDE;
 $cta-buttonglow:rgba(0, 216, 236, 0.882);
 $cta-buttonglow-hover:rgba(239, 0, 0, 0.882);
-$borderbox-color:#ff8a83;
-$footer-color: #CCCCCC;
+$borderbox-color:#DC9784;
+$footer-color: #FFFAFA;
 $Heading-font-size: 3.875rem;
 $Heading-mobile-size: 2.625rem;
 $broedtekst-font-size: 1.6rem; 
@@ -22,8 +22,8 @@ $faktakasse-font-size: 1.1rem;
 $button-font-size: 1.6rem;
 $box-shadow:0 2px 4px rgba(255, 255, 255, 0.4), 
 0 8px 16px rgba(0, 0, 0, 0.3); 
-$box-shadow2: 0 3px 6px rgba(255, 255, 255, 0.5), 
-        0 12px 24px rgba(0, 0, 0, 0.4); 
+$box-shadow2: 0 2px 4px rgba(223, 95, 95, 100%);
+$box-shadow3: 0 2px 4px rgba(37, 130, 151, 100%);
 
 
 
@@ -67,7 +67,7 @@ $box-shadow2: 0 3px 6px rgba(255, 255, 255, 0.5),
     cursor: pointer;
     transition: background-color 0.3s, color 0,3s;
     font-size: 1.125rem; 
-    box-shadow: $box-shadow2;
+    box-shadow: $box-shadow;
 
     @media only screen and (max-width: 500px){
         padding: 10px 5px;
